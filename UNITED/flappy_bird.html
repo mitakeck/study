@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flappy Bird</title>
+  <script>
+    window.onload = function(){
+      var canvas = document.getElementById("canvas");
+      var context = canvas.getContext("2d");
+
+      var width = 500;
+      var height = 500;
+
+      var score, x, y, dy, isDead, walls;
+
+      // 初期化処理
+      var init = function(){
+        score = 0;
+        x = 100;
+        y = height*0.2;
+        dy = 0;
+        isDead = false;
+        walls = [];
+        walls.push({x:500, y:Math.random()*400+50});
+        walls.push({x:750, y:Math.random()*400+50});
+        setTimeout(loop, 10);
+      }
+
+      // メインループ
+      var loop = function(){
+        // 画面クリア
+        context.clearRect(0, 0, width, height);
+        context.beginPath();
+
+        context.fillRect(0, 0, width, 10);
+        context.fillRect(0, height-10, width, 10);
+
+        // 自キャラ描画
+        context.arc(x, y, 10, 0, Math.PI*2, false);
+        context.fill();
+
+        // スコア描画
+        context.strokeText("SCORE: " + score, 440, 30);
+
+        // 落下処理
+        dy = Math.max(-8, dy-0.2);
+        y -= dy;
+
+        // 障害物描画
+        for(var index in walls){
+          var wall = walls[index];
+          if(wall.x < -10){
+            delete walls[index];
+            walls.push({x:500, y:Math.random()*400+50});
+          }
+
+          context.fillRect(wall.x, 0, 10, wall.y-50);  // 上部分
+          context.fillRect(wall.x, wall.y+50, 10, height-wall.y+50);  // 下部分
+
+          // 壁との当たり判定
+          if(100 < wall.x && wall.x < 110){
+            if(Math.abs(y-wall.y)>50){
+              isDead = true;
+            }
+          }
+
+          if(wall.x == 100){
+            score++;
+          }
+          wall.x --;
+        }
+
+        // 判定
+        if(y<0 || height<y) isDead = true;
+
+        if(isDead){
+          if(confirm("your score is " + score + " !!!\nreplay ?")){
+            init();
+          }
+        }else{
+          setTimeout(loop, 10);
+        }
+      }
+
+      // ジャンプ処理
+      var jump = function(){
+        dy = 5.0;
+      }
+      canvas.addEventListener("click", jump);
+
+      init();
+    }
+
+  </script>
+</head>
+<body>
+  <canvas id="canvas" width="500px" height="500px"></canvas>
+</body>
+</html>
