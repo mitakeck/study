@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flayy Bird 2</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var canvas = document.getElementById("canvas");
+			var context = canvas.getContext("2d");
+
+			// イベント管理
+			var Obs = (function(){
+					var Obs = function(){
+						this.collection = {};
+					};
+					// イベント設定
+					Obs.prototype.on = function(key, func, scope){
+						if(this.collection[key] == undefined){
+							this.collection[key] = [];
+						}
+						this.collection[key].push({
+							"func": func,
+							"scope": scope
+						});
+					}
+					// イベント発行
+					Obs.prototype.trigger = function(key, args){
+						for(var index in this.collection[key]){
+							var arr = this.collection[key][index];
+							var scope = arr["scope"] || window;
+							arr["func"].bind(scope)(args);
+						}
+					}
+					return Obs;
+			})();
+			var obs = new Obs();
+		}
+	</script>
+</head>
+<body>
+	<canvas id="canvas" width="500" height="500"></canvas>	
+</body>
+</html>
