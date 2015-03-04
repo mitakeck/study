@@ -1,0 +1,16 @@
+# Virtual Anchor
+
+## About
+
+QR コードリーダーじゃなくて、カメラ画像中に含まれる URL を認識して開くアプリ
+
+# Requirement
+
+- カメラ映像を取得する
+- OCR
+
+# Issue 
+
+- カメラ画像を取得することが iOS シミュレータで出来ないっぽい
+	- Apple Developer Programs に登録する
+
