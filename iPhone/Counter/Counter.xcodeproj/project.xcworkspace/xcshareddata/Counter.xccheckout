@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A6333B57-84B5-4627-8F67-55A08668FB71</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Counter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D9298D32CE2333AA2AB364969DA450B6EC0338E7</key>
+		<string>https://github.com/mitakeck/study.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iPhone/Counter/Counter.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D9298D32CE2333AA2AB364969DA450B6EC0338E7</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mitakeck/study.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D9298D32CE2333AA2AB364969DA450B6EC0338E7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D9298D32CE2333AA2AB364969DA450B6EC0338E7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>study</string>
+		</dict>
+	</array>
+</dict>
+</plist>
