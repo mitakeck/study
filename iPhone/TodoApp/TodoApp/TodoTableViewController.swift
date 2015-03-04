@@ -34,7 +34,7 @@ class TodoTableViewController : UIViewController, UITableViewDataSource{
     
     // テーブルの行数を返却する関数
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 10
+        return 100
     }
     
     // テーブルで表示するセルを生成して返却する関数
