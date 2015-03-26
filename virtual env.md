@@ -1,3 +1,4 @@
+# virtual env
 
 ```
 $ sudo apt-get install python-virtualenv python-pip
@@ -9,3 +10,4 @@ $ source .myenv/bin/activate
 (myenv)$ pip install -U gensim
 (myenv)$ pip install -U word2vec
 ```
+
