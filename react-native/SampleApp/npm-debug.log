@@ -1,0 +1,1168 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'react-native' ]
+2 info using npm@1.2.14
+3 info using node@v0.8.22
+4 verbose read json /Users/take/study/react-native/SampleApp/package.json
+5 warn package.json SampleApp@0.0.1 No README.md file found!
+6 verbose from cache /Users/take/study/react-native/SampleApp/package.json
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'react-native', null ]
+9 verbose cache add name=undefined spec="react-native" args=["react-native",null]
+10 verbose parsed url { pathname: 'react-native',
+10 verbose parsed url   path: 'react-native',
+10 verbose parsed url   href: 'react-native' }
+11 silly lockFile 5c4a3867-react-native react-native
+12 verbose lock react-native /Users/take/.npm/5c4a3867-react-native.lock
+13 silly lockFile 5c4a3867-react-native react-native
+14 silly lockFile 5c4a3867-react-native react-native
+15 verbose addNamed [ 'react-native', '' ]
+16 verbose addNamed [ null, '' ]
+17 silly lockFile 4b61749f-react-native react-native@
+18 verbose lock react-native@ /Users/take/.npm/4b61749f-react-native.lock
+19 silly addNameRange { name: 'react-native', range: '', hasData: false }
+20 verbose url raw react-native
+21 verbose url resolving [ 'https://registry.npmjs.org/', './react-native' ]
+22 verbose url resolved https://registry.npmjs.org/react-native
+23 info trying registry request attempt 1 at 21:19:21
+24 verbose etag "5UIESBG59SJCDU9XL8TDKS188"
+25 http GET https://registry.npmjs.org/react-native
+26 http 304 https://registry.npmjs.org/react-native
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Sat, 28 Mar 2015 12:19:20 GMT',
+27 silly registry.get     server: 'Apache',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'last-modified': 'Sat, 28 Mar 2015 12:19:20 GMT',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"5UIESBG59SJCDU9XL8TDKS188"',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-nrt6126-NRT',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1427545160.752727,VS0,VE176',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'content-length': '0',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 verbose etag react-native from cache
+29 silly addNameRange number 2 { name: 'react-native', range: '', hasData: true }
+30 silly addNameRange versions [ 'react-native',
+30 silly addNameRange   [ '0.0.0',
+30 silly addNameRange     '0.0.5',
+30 silly addNameRange     '0.0.6',
+30 silly addNameRange     '0.1.0',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.2.1',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.3.1' ] ]
+31 verbose addNamed [ 'react-native', '0.3.1' ]
+32 verbose addNamed [ '0.3.1', '0.3.1' ]
+33 silly lockFile 3dbfa724-react-native-0-3-1 react-native@0.3.1
+34 verbose lock react-native@0.3.1 /Users/take/.npm/3dbfa724-react-native-0-3-1.lock
+35 verbose read json /Users/take/.npm/react-native/0.3.1/package/package.json
+36 silly lockFile 3dbfa724-react-native-0-3-1 react-native@0.3.1
+37 silly lockFile 3dbfa724-react-native-0-3-1 react-native@0.3.1
+38 silly lockFile 4b61749f-react-native react-native@
+39 silly lockFile 4b61749f-react-native react-native@
+40 silly resolved [ { name: 'react-native',
+40 silly resolved     version: '0.3.1',
+40 silly resolved     description: 'A framework for building native apps using React',
+40 silly resolved     repository: { type: 'git', url: 'git@github.com:facebook/react-native.git' },
+40 silly resolved     jest:
+40 silly resolved      { scriptPreprocessor: 'jestSupport/scriptPreprocess.js',
+40 silly resolved        setupEnvScriptFile: 'jestSupport/env.js',
+40 silly resolved        testPathIgnorePatterns: [Object],
+40 silly resolved        testFileExtensions: [Object],
+40 silly resolved        unmockedModulePathPatterns: [Object] },
+40 silly resolved     main: 'Libraries/react-native/react-native.js',
+40 silly resolved     files:
+40 silly resolved      [ 'React',
+40 silly resolved        'Examples/SampleApp',
+40 silly resolved        'Libraries',
+40 silly resolved        'packager',
+40 silly resolved        'cli.js',
+40 silly resolved        'init.sh',
+40 silly resolved        'LICENSE',
+40 silly resolved        'PATENTS',
+40 silly resolved        'README.md' ],
+40 silly resolved     scripts:
+40 silly resolved      { test: 'jest',
+40 silly resolved        lint: 'node linter.js Examples/',
+40 silly resolved        start: './packager/packager.sh' },
+40 silly resolved     bin: { 'react-native-start': 'packager/packager.sh' },
+40 silly resolved     dependencies:
+40 silly resolved      { connect: '2.8.3',
+40 silly resolved        jstransform: '10.0.1',
+40 silly resolved        'react-timer-mixin': '^0.13.1',
+40 silly resolved        'react-tools': '0.13.0-rc2',
+40 silly resolved        rebound: '^0.0.12',
+40 silly resolved        'source-map': '0.1.31',
+40 silly resolved        'stacktrace-parser': '0.1.1',
+40 silly resolved        'absolute-path': '0.0.0',
+40 silly resolved        debug: '~2.1.0',
+40 silly resolved        joi: '~5.1.0',
+40 silly resolved        'module-deps': '3.5.6',
+40 silly resolved        optimist: '0.6.1',
+40 silly resolved        q: '1.0.1',
+40 silly resolved        sane: '1.0.1',
+40 silly resolved        'uglify-js': '~2.4.16',
+40 silly resolved        underscore: '1.7.0',
+40 silly resolved        'worker-farm': '1.1.0',
+40 silly resolved        yargs: '1.3.2',
+40 silly resolved        ws: '0.4.31' },
+40 silly resolved     devDependencies: { 'jest-cli': '0.2.1', eslint: '0.9.2' },
+40 silly resolved     readme: '# React Native [![Build Status](https://travis-ci.org/facebook/react-native.svg?branch=master)](https://travis-ci.org/facebook/react-native)\n\nReact Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and\n[React](http://facebook.github.io/react). The focus of React Native is on developer efficiency across all the platforms you care about - learn once, write anywhere. Facebook uses React Native in multiple production apps and will continue investing in React Native.\n\n## Native iOS Components\n\nWith React Native, you can use the standard platform components such as `UITabBar` and `UINavigationController` on iOS.  This gives your app a consistent look and feel with the rest of the platform ecosystem, and keeps the quality bar high.  These components are easily incorporated into your app using their React component counterparts, such as _TabBarIOS_ and _NavigatorIOS_.\n\n```javascript\nvar React = require(\'react-native\');\nvar { TabBarIOS, NavigatorIOS } = React;\n\nvar App = React.createClass({\n  render: function() {\n    return (\n      <TabBarIOS>\n        <TabBarIOS.Item title="React Native" selected={true}>\n          <NavigatorIOS initialRoute={{ title: \'React Native\' }} />\n        </TabBarIOS.Item>\n      </TabBarIOS>\n    );\n  },\n});\n```\n\n## Asynchronous Execution\n\nAll operations between the JavaScript application code and the native platform are performed asynchronously, and the native modules can also make use of additional threads as well.  This means we can decode images off of the main thread, save to disk in the background, measure text and compute layouts without blocking the UI, and more.  As a result, React Native apps are naturally fluid and responsive.  The communication is also fully serializable, which allows us to leverage Chrome Developer Tools to debug the JavaScript while running the complete app, either in the simulator or on a physical device.\n\n![](http://facebook.github.io/react-native/img/chrome_breakpoint.png)\n\n\n## Touch Handling\n\niOS has a very powerful system called the Responder Chain to negotiate touches in complex view hierarchies which does not have a universal analog on the web. React Native implements a similar responder system and provides high level components such as TouchableHighlight that integrate properly with scroll views and other elements without any additional configuration.\n\n```javascript\nvar React = require(\'react-native\');\nvar { ScrollView, TouchableHighlight, Text } = React;\n\nvar TouchDemo = React.createClass({\n  render: function() {\n    return (\n      <ScrollView>\n        <TouchableHighlight onPress={() => console.log(\'pressed\')}>\n          <Text>Proper Touch Handling</Text>\n        </TouchableHighlight>\n      </ScrollView>\n    );\n  },\n});\n```\n\n\n## Flexbox and Styling\nLaying out views should be easy, which is why we brought the flexbox layout model from the web to React Native.  Flexbox makes it simple to build the most common UI layouts, such as stacked and nested boxes with margin and padding.  React Native also supports common web styles, such as `fontWeight`, and the `StyleSheet` abstraction provides an optimized mechanism to declare all your styles and layout right along with the components that use them and apply them inline.\n\n```javascript\nvar React = require(\'react-native\');\nvar { Image, StyleSheet, Text, View } = React;\n\nvar ReactNative = React.createClass({\n  render: function() {\n    return (\n      <View style={styles.row}>\n        <Image\n          source={{uri: \'http://facebook.github.io/react/img/logo_og.png\'}}\n          style={styles.image}\n        />\n        <View style={styles.text}>\n          <Text style={styles.title}>\n            React Native\n          </Text>\n          <Text style={styles.subtitle}>\n            Build high quality mobile apps using React\n          </Text>\n        </View>\n      </View>\n    );\n  },\n});\nvar styles = StyleSheet.create({\n  row: { flexDirection: \'row\', margin: 40 },\n  image: { width: 40, height: 40, marginRight: 10 },\n  text: { flex: 1, justifyContent: \'center\'},\n  title: { fontSize: 11, fontWeight: \'bold\' },\n  subtitle: { fontSize: 10 },\n});\n```\n\n## Polyfills\n\nReact Native is focused on changing the way view code is written.  For the rest, we look to the web for universal standards and polyfill those APIs where appropriate. You can use npm to install JavaScript libraries that work on top of the functionality baked into React Native, such as `XMLHttpRequest`, `window.requestAnimationFrame`, and `navigator.geolocation`.  We are working on expanding the available APIs, and are excited for the Open Source community to contribute as well.\n\n```javascript\nvar React = require(\'react-native\');\nvar { Text } = React;\n\nvar GeoInfo = React.createClass({\n  getInitialState: function() {\n    return { position: \'unknown\' };\n  },\n  componentDidMount: function() {\n    navigator.geolocation.getCurrentPosition(\n      (position) => this.setState({position}),\n      (error) => console.error(error)\n    );\n  },\n  render: function() {\n    return (\n      <Text>\n        Position: {JSON.stringify(this.state.position)}\n      </Text>\n    );\n  },\n});\n```\n\n## Extensibility\n\nIt is certainly possible to create a great app using React Native without writing a single line of native code, but React Native is also designed to be easily extended with custom native views and modules - that means you can reuse anything you\'ve already built, and can import and use your favorite native libraries.  To create a simple module in iOS, create a new class that implements the `RCTBridgeModule` protocol, and add `RCT_EXPORT` to the function you want to make available in JavaScript.\n\n```objc\n// Objective-C\n\n#import "RCTBridgeModule.h"\n\n@interface MyCustomModule : NSObject <RCTBridgeModule>\n@end\n\n@implementation MyCustomModule\n- (void)processString:(NSString *)input callback:(RCTResponseSenderBlock)callback\n{\n  RCT_EXPORT(); // available as NativeModules.MyCustomModule.processString\n  callback(@[[input stringByReplacingOccurrencesOfString:@"Goodbye" withString:@"Hello"];]]);\n}\n@end\n```\n\n```javascript\n// JavaScript\n\nvar React = require(\'react-native\');\nvar { NativeModules, Text } = React;\n\nvar Message = React.createClass({\n  render: function() {\n    getInitialState() {\n      return { text: \'Goodbye World.\' };\n    },\n    componentDidMount() {\n      NativeModules.MyCustomModule.processString(this.state.text, (text) => {\n        this.setState({text});\n      });\n    },\n    return (\n      <Text>{this.state.text}</Text>\n    );\n  },\n});\n```\n\nCustom iOS views can be exposed by subclassing `RCTViewManager`, implementing a `-view` method, and exporting properties with the `RCT_EXPORT_VIEW_PROPERTY` macro.  Then a simple JavaScript file connects the dots.\n\n```objc\n// Objective-C\n\n#import "RCTViewManager.h"\n\n@interface MyCustomViewManager : RCTViewManager\n@end\n\n@implementation MyCustomViewManager\n- (UIView *)view\n{\n  return [[MyCustomView alloc] init];\n}\n\nRCT_EXPORT_VIEW_PROPERTY(myCustomProperty);\n\n@end`}\n```\n\n```javascript\n// JavaScript\n\nvar MyCustomView = createReactIOSNativeComponentClass({\n  validAttributes: { myCustomProperty: true },\n  uiViewClassName: \'MyCustomView\',\n});\n```\n\nFurther documentation, tutorials, and more on the [React Native website](http://facebook.github.io/react-native/docs/getting-started.html).\n',
+40 silly resolved     readmeFilename: 'README.md',
+40 silly resolved     _id: 'react-native@0.3.1',
+40 silly resolved     _from: 'react-native@' } ]
+41 info install react-native@0.3.1 into /Users/take/study/react-native/SampleApp
+42 info installOne react-native@0.3.1
+43 verbose from cache /Users/take/.npm/react-native/0.3.1/package/package.json
+44 info /Users/take/study/react-native/SampleApp/node_modules/react-native unbuild
+45 verbose read json /Users/take/study/react-native/SampleApp/node_modules/react-native/package.json
+46 verbose tar unpack /Users/take/.npm/react-native/0.3.1/package.tgz
+47 silly lockFile 4f0535e4-pleApp-node-modules-react-native /Users/take/study/react-native/SampleApp/node_modules/react-native
+48 verbose lock /Users/take/study/react-native/SampleApp/node_modules/react-native /Users/take/.npm/4f0535e4-pleApp-node-modules-react-native.lock
+49 silly lockFile e4a1c831-m-react-native-0-3-1-package-tgz /Users/take/.npm/react-native/0.3.1/package.tgz
+50 verbose lock /Users/take/.npm/react-native/0.3.1/package.tgz /Users/take/.npm/e4a1c831-m-react-native-0-3-1-package-tgz.lock
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 silly gunzTarPerm extractEntry package.json
+53 silly gunzTarPerm extractEntry README.md
+54 silly gunzTarPerm extractEntry LICENSE
+55 silly gunzTarPerm extractEntry cli.js
+56 silly gunzTarPerm extractEntry Examples/SampleApp/.npmignore
+57 silly gunzTarPerm extractEntry Examples/SampleApp/index.ios.js
+58 silly gunzTarPerm extractEntry Examples/SampleApp/iOS/AppDelegate.h
+59 silly gunzTarPerm extractEntry Examples/SampleApp/iOS/AppDelegate.m
+60 silly gunzTarPerm extractEntry Examples/SampleApp/iOS/Base.lproj/LaunchScreen.xib
+61 silly gunzTarPerm extractEntry Examples/SampleApp/iOS/Images.xcassets/AppIcon.appiconset/Contents.json
+62 silly gunzTarPerm extractEntry Examples/SampleApp/iOS/Info.plist
+63 silly gunzTarPerm extractEntry Examples/SampleApp/iOS/main.m
+64 silly gunzTarPerm extractEntry Examples/SampleApp/SampleApp.xcodeproj/project.pbxproj
+65 silly gunzTarPerm extractEntry Examples/SampleApp/SampleApp.xcodeproj/xcshareddata/xcschemes/SampleApp.xcscheme
+66 silly gunzTarPerm extractEntry init.sh
+67 silly gunzTarPerm extractEntry Libraries/LinkingIOS/LinkingIOS.js
+68 silly gunzTarPerm extractEntry Libraries/LinkingIOS/RCTLinking.xcodeproj/project.pbxproj
+69 silly gunzTarPerm extractEntry Libraries/LinkingIOS/RCTLinking.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/RCTLinking.xcscheme
+70 silly gunzTarPerm extractEntry Libraries/LinkingIOS/RCTLinking.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/xcschememanagement.plist
+71 silly gunzTarPerm extractEntry Libraries/LinkingIOS/RCTLinkingManager.h
+72 silly gunzTarPerm extractEntry Libraries/LinkingIOS/RCTLinkingManager.m
+73 silly gunzTarPerm extractEntry Libraries/ActionSheetIOS/ActionSheetIOS.js
+74 silly gunzTarPerm extractEntry Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj/project.pbxproj
+75 silly gunzTarPerm extractEntry Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/RCTActionSheet.xcscheme
+76 silly gunzTarPerm extractEntry Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/xcschememanagement.plist
+77 silly gunzTarPerm extractEntry Libraries/ActionSheetIOS/RCTActionSheetManager.h
+78 silly gunzTarPerm extractEntry Libraries/ActionSheetIOS/RCTActionSheetManager.m
+79 silly gunzTarPerm extractEntry Libraries/Animation/Animation.js
+80 silly gunzTarPerm extractEntry Libraries/Animation/AnimationMixin.js
+81 silly gunzTarPerm extractEntry Libraries/Animation/AnimationUtils.js
+82 silly gunzTarPerm extractEntry Libraries/Animation/LayoutAnimation.js
+83 silly gunzTarPerm extractEntry Libraries/Animation/POPAnimationMixin.js
+84 silly gunzTarPerm extractEntry Libraries/Animation/__tests__/AnimationUtils-test.js
+85 silly gunzTarPerm extractEntry Libraries/Animation/RCTAnimation.xcodeproj/project.pbxproj
+86 silly gunzTarPerm extractEntry Libraries/Animation/RCTAnimation.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/RCTAnimation.xcscheme
+87 silly gunzTarPerm extractEntry Libraries/Animation/RCTAnimation.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/xcschememanagement.plist
+88 silly gunzTarPerm extractEntry Libraries/Animation/RCTAnimationManager.h
+89 silly gunzTarPerm extractEntry Libraries/Animation/RCTAnimationManager.m
+90 silly gunzTarPerm extractEntry Libraries/AppRegistry/AppRegistry.js
+91 silly gunzTarPerm extractEntry Libraries/AppStateIOS/AppStateIOS.android.js
+92 silly gunzTarPerm extractEntry Libraries/AppStateIOS/AppStateIOS.ios.js
+93 silly gunzTarPerm extractEntry Libraries/BatchedBridge/BatchedBridgedModules/NativeModules.js
+94 silly gunzTarPerm extractEntry Libraries/BatchedBridge/BatchedBridgedModules/POPAnimation.js
+95 silly gunzTarPerm extractEntry Libraries/BatchedBridge/BatchedBridgedModules/RCTAlertManager.ios.js
+96 silly gunzTarPerm extractEntry Libraries/BatchedBridge/BatchedBridgedModules/RCTEventEmitter.js
+97 silly gunzTarPerm extractEntry Libraries/BatchedBridge/BatchedBridgedModules/RCTJSTimers.js
+98 silly gunzTarPerm extractEntry Libraries/BatchedBridge/BatchingImplementation/BatchedBridge.js
+99 silly gunzTarPerm extractEntry Libraries/BatchedBridge/BatchingImplementation/BatchedBridgeFactory.js
+100 silly gunzTarPerm extractEntry Libraries/CameraRoll/CameraRoll.js
+101 silly gunzTarPerm extractEntry Libraries/Components/ScrollResponder.js
+102 silly gunzTarPerm extractEntry Libraries/Components/StaticRenderer.js
+103 silly gunzTarPerm extractEntry Libraries/Components/Subscribable.js
+104 silly gunzTarPerm extractEntry Libraries/Components/StatusBar/StatusBarIOS.ios.js
+105 silly gunzTarPerm extractEntry Libraries/Components/ActivityIndicatorIOS/ActivityIndicatorIOS.ios.js
+106 silly gunzTarPerm extractEntry Libraries/Components/ScrollView/ScrollView.js
+107 silly gunzTarPerm extractEntry Libraries/Components/SliderIOS/SliderIOS.js
+108 silly gunzTarPerm extractEntry Libraries/Components/MapView/MapView.js
+109 silly gunzTarPerm extractEntry Libraries/Components/DatePicker/DatePickerIOS.ios.js
+110 silly gunzTarPerm extractEntry Libraries/Components/Navigation/NavigatorIOS.ios.js
+111 silly gunzTarPerm extractEntry Libraries/Components/SwitchIOS/SwitchIOS.android.js
+112 silly gunzTarPerm extractEntry Libraries/Components/SwitchIOS/SwitchIOS.ios.js
+113 silly gunzTarPerm extractEntry Libraries/Components/TabBarIOS/TabBarIOS.android.js
+114 silly gunzTarPerm extractEntry Libraries/Components/TabBarIOS/TabBarIOS.ios.js
+115 silly gunzTarPerm extractEntry Libraries/Components/TabBarIOS/TabBarItemIOS.android.js
+116 silly gunzTarPerm extractEntry Libraries/Components/TabBarIOS/TabBarItemIOS.ios.js
+117 silly gunzTarPerm extractEntry Libraries/Components/TextInput/TextInput.ios.js
+118 silly gunzTarPerm extractEntry Libraries/Components/TextInput/TextInputState.js
+119 silly gunzTarPerm extractEntry Libraries/Components/Touchable/ensureComponentIsNative.js
+120 silly gunzTarPerm extractEntry Libraries/Components/Touchable/TouchableBounce.js
+121 silly gunzTarPerm extractEntry Libraries/Components/Touchable/TouchableHighlight.js
+122 silly gunzTarPerm extractEntry Libraries/Components/Touchable/TouchableOpacity.js
+123 silly gunzTarPerm extractEntry Libraries/Components/Touchable/TouchableWithoutFeedback.js
+124 silly gunzTarPerm extractEntry Libraries/Components/View/View.js
+125 silly gunzTarPerm extractEntry Libraries/Components/View/ViewStylePropTypes.js
+126 silly gunzTarPerm extractEntry Libraries/Components/WebView/WebView.android.js
+127 silly gunzTarPerm extractEntry Libraries/Components/WebView/WebView.ios.js
+128 silly gunzTarPerm extractEntry Libraries/CustomComponents/LICENSE
+129 silly gunzTarPerm extractEntry Libraries/CustomComponents/ListView/ListView.js
+130 silly gunzTarPerm extractEntry Libraries/CustomComponents/ListView/ListViewDataSource.js
+131 silly gunzTarPerm extractEntry Libraries/CustomComponents/Navigator/Navigator.js
+132 silly gunzTarPerm extractEntry Libraries/CustomComponents/Navigator/NavigatorBreadcrumbNavigationBar.js
+133 silly gunzTarPerm extractEntry Libraries/CustomComponents/Navigator/NavigatorBreadcrumbNavigationBarStyles.ios.js
+134 silly gunzTarPerm extractEntry Libraries/CustomComponents/Navigator/NavigatorNavigationBar.js
+135 silly gunzTarPerm extractEntry Libraries/CustomComponents/Navigator/NavigatorNavigationBarStyles.ios.js
+136 silly gunzTarPerm extractEntry Libraries/CustomComponents/Navigator/NavigatorSceneConfigs.js
+137 silly gunzTarPerm extractEntry Libraries/Device/RCTDeviceEventEmitter.js
+138 silly gunzTarPerm extractEntry Libraries/Fetch/fetch.js
+139 silly gunzTarPerm extractEntry Libraries/Geolocation/Geolocation.ios.js
+140 silly gunzTarPerm extractEntry Libraries/Geolocation/RCTGeolocation.xcodeproj/project.pbxproj
+141 silly gunzTarPerm extractEntry Libraries/Geolocation/RCTGeolocation.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/RCTGeolocation.xcscheme
+142 silly gunzTarPerm extractEntry Libraries/Geolocation/RCTGeolocation.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/xcschememanagement.plist
+143 silly gunzTarPerm extractEntry Libraries/Geolocation/RCTLocationObserver.h
+144 silly gunzTarPerm extractEntry Libraries/Geolocation/RCTLocationObserver.m
+145 silly gunzTarPerm extractEntry Libraries/Image/Image.ios.js
+146 silly gunzTarPerm extractEntry Libraries/Image/ImageStylePropTypes.js
+147 silly gunzTarPerm extractEntry Libraries/Image/ImageResizeMode.js
+148 silly gunzTarPerm extractEntry Libraries/Image/RCTCameraRollManager.h
+149 silly gunzTarPerm extractEntry Libraries/Image/RCTCameraRollManager.m
+150 silly gunzTarPerm extractEntry Libraries/Image/RCTGIFImage.h
+151 silly gunzTarPerm extractEntry Libraries/Image/RCTGIFImage.m
+152 silly gunzTarPerm extractEntry Libraries/Image/RCTImage.xcodeproj/project.pbxproj
+153 silly gunzTarPerm extractEntry Libraries/Image/RCTImage.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/RCTImage.xcscheme
+154 silly gunzTarPerm extractEntry Libraries/Image/RCTImage.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/xcschememanagement.plist
+155 silly gunzTarPerm extractEntry Libraries/Image/RCTImageDownloader.h
+156 silly gunzTarPerm extractEntry Libraries/Image/RCTImageDownloader.m
+157 silly gunzTarPerm extractEntry Libraries/Image/RCTStaticImageManager.m
+158 silly gunzTarPerm extractEntry Libraries/Image/RCTImageLoader.m
+159 silly gunzTarPerm extractEntry Libraries/Image/RCTNetworkImageView.h
+160 silly gunzTarPerm extractEntry Libraries/Image/RCTNetworkImageView.m
+161 silly gunzTarPerm extractEntry Libraries/Image/RCTNetworkImageViewManager.h
+162 silly gunzTarPerm extractEntry Libraries/Image/RCTNetworkImageViewManager.m
+163 silly gunzTarPerm extractEntry Libraries/Image/RCTStaticImage.h
+164 silly gunzTarPerm extractEntry Libraries/Image/RCTStaticImage.m
+165 silly gunzTarPerm extractEntry Libraries/Image/RCTStaticImageManager.h
+166 silly gunzTarPerm extractEntry Libraries/Image/RCTImageLoader.h
+167 silly gunzTarPerm extractEntry Libraries/Interaction/InteractionManager.js
+168 silly gunzTarPerm extractEntry Libraries/Interaction/InteractionMixin.js
+169 silly gunzTarPerm extractEntry Libraries/JavaScriptAppEngine/Initialization/ExceptionsManager.js
+170 silly gunzTarPerm extractEntry Libraries/JavaScriptAppEngine/Initialization/InitializeJavaScriptAppEngine.js
+171 silly gunzTarPerm extractEntry Libraries/JavaScriptAppEngine/Initialization/loadSourceMap.js
+172 silly gunzTarPerm extractEntry Libraries/JavaScriptAppEngine/Initialization/parseErrorStack.js
+173 silly gunzTarPerm extractEntry Libraries/JavaScriptAppEngine/Initialization/source-map-url.js
+174 silly gunzTarPerm extractEntry Libraries/JavaScriptAppEngine/Initialization/SourceMap.js
+175 silly gunzTarPerm extractEntry Libraries/JavaScriptAppEngine/System/JSTimers/JSTimers.js
+176 silly gunzTarPerm extractEntry Libraries/JavaScriptAppEngine/System/JSTimers/JSTimersExecution.js
+177 silly gunzTarPerm extractEntry Libraries/AdSupport/AdSupportIOS.js
+178 silly gunzTarPerm extractEntry Libraries/AdSupport/RCTAdSupport.h
+179 silly gunzTarPerm extractEntry Libraries/AdSupport/RCTAdSupport.m
+180 silly gunzTarPerm extractEntry Libraries/AdSupport/RCTAdSupport.xcodeproj/project.pbxproj
+181 silly gunzTarPerm extractEntry Libraries/AdSupport/RCTAdSupport.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/RCTAdSupport.xcscheme
+182 silly gunzTarPerm extractEntry Libraries/AdSupport/RCTAdSupport.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/xcschememanagement.plist
+183 silly gunzTarPerm extractEntry Libraries/Network/NetInfo.js
+184 silly gunzTarPerm extractEntry Libraries/Network/XMLHttpRequest.ios.js
+185 silly gunzTarPerm extractEntry Libraries/Network/XMLHttpRequestBase.js
+186 silly gunzTarPerm extractEntry Libraries/Network/RCTDataManager.h
+187 silly gunzTarPerm extractEntry Libraries/Network/RCTDataManager.m
+188 silly gunzTarPerm extractEntry Libraries/Network/RCTNetwork.xcodeproj/project.pbxproj
+189 silly gunzTarPerm extractEntry Libraries/Network/RCTNetwork.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/RCTNetwork.xcscheme
+190 silly gunzTarPerm extractEntry Libraries/Network/RCTNetwork.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/xcschememanagement.plist
+191 silly gunzTarPerm extractEntry Libraries/Network/RCTReachability.h
+192 silly gunzTarPerm extractEntry Libraries/Network/RCTReachability.m
+193 silly gunzTarPerm extractEntry Libraries/Picker/PickerIOS.android.js
+194 silly gunzTarPerm extractEntry Libraries/Picker/PickerIOS.ios.js
+195 silly gunzTarPerm extractEntry Libraries/PushNotificationIOS/PushNotificationIOS.js
+196 silly gunzTarPerm extractEntry Libraries/PushNotificationIOS/RCTPushNotification.xcodeproj/project.pbxproj
+197 silly gunzTarPerm extractEntry Libraries/PushNotificationIOS/RCTPushNotification.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/RCTPushNotification.xcscheme
+198 silly gunzTarPerm extractEntry Libraries/PushNotificationIOS/RCTPushNotification.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/xcschememanagement.plist
+199 silly gunzTarPerm extractEntry Libraries/PushNotificationIOS/RCTPushNotificationManager.h
+200 silly gunzTarPerm extractEntry Libraries/PushNotificationIOS/RCTPushNotificationManager.m
+201 silly gunzTarPerm extractEntry Libraries/RCTTest/FBSnapshotTestCase/FBSnapshotTestCase.h
+202 silly gunzTarPerm extractEntry Libraries/RCTTest/FBSnapshotTestCase/FBSnapshotTestCase.m
+203 silly gunzTarPerm extractEntry Libraries/RCTTest/FBSnapshotTestCase/FBSnapshotTestController.h
+204 silly gunzTarPerm extractEntry Libraries/RCTTest/FBSnapshotTestCase/FBSnapshotTestController.m
+205 silly gunzTarPerm extractEntry Libraries/RCTTest/FBSnapshotTestCase/UIImage+Compare.h
+206 silly gunzTarPerm extractEntry Libraries/RCTTest/FBSnapshotTestCase/UIImage+Compare.m
+207 silly gunzTarPerm extractEntry Libraries/RCTTest/FBSnapshotTestCase/UIImage+Diff.h
+208 silly gunzTarPerm extractEntry Libraries/RCTTest/FBSnapshotTestCase/UIImage+Diff.m
+209 silly gunzTarPerm extractEntry Libraries/RCTTest/RCTTest.xcodeproj/project.pbxproj
+210 silly gunzTarPerm extractEntry Libraries/RCTTest/RCTTest.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/RCTTest.xcscheme
+211 silly gunzTarPerm extractEntry Libraries/RCTTest/RCTTest.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/xcschememanagement.plist
+212 silly gunzTarPerm extractEntry Libraries/RCTTest/RCTTestModule.h
+213 silly gunzTarPerm extractEntry Libraries/RCTTest/RCTTestModule.m
+214 silly gunzTarPerm extractEntry Libraries/RCTTest/RCTTestRunner.h
+215 silly gunzTarPerm extractEntry Libraries/RCTTest/RCTTestRunner.m
+216 silly gunzTarPerm extractEntry Libraries/RCTWebSocketDebugger/RCTWebSocketDebugger.xcodeproj/project.pbxproj
+217 silly gunzTarPerm extractEntry Libraries/RCTWebSocketDebugger/RCTWebSocketDebugger.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/RCTWebSocketDebugger.xcscheme
+218 silly gunzTarPerm extractEntry Libraries/RCTWebSocketDebugger/RCTWebSocketDebugger.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/xcschememanagement.plist
+219 silly gunzTarPerm extractEntry Libraries/RCTWebSocketDebugger/RCTWebSocketExecutor.h
+220 silly gunzTarPerm extractEntry Libraries/RCTWebSocketDebugger/RCTWebSocketExecutor.m
+221 silly gunzTarPerm extractEntry Libraries/RCTWebSocketDebugger/SRWebSocket.h
+222 silly gunzTarPerm extractEntry Libraries/RCTWebSocketDebugger/SRWebSocket.m
+223 silly gunzTarPerm extractEntry Libraries/react-native/react-native-interface.js
+224 silly gunzTarPerm extractEntry Libraries/react-native/react-native.js
+225 silly gunzTarPerm extractEntry Libraries/ReactIOS/createReactIOSNativeComponentClass.js
+226 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSComponentEnvironment.js
+227 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSComponentMixin.js
+228 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSDefaultInjection.js
+229 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSDOMIDOperations.js
+230 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOS.js
+231 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSGlobalInteractionHandler.js
+232 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSGlobalResponderHandler.js
+233 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSMount.js
+234 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSNativeComponent.js
+235 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSReconcileTransaction.js
+236 silly gunzTarPerm extractEntry Libraries/ReactIOS/React.js
+237 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSStyleAttributes.js
+238 silly gunzTarPerm extractEntry Libraries/ReactIOS/NativeMethodsMixin.js
+239 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSTagHandles.js
+240 silly gunzTarPerm extractEntry Libraries/ReactIOS/IOSNativeBridgeEventPlugin.js
+241 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSTextComponent.js
+242 silly gunzTarPerm extractEntry Libraries/ReactIOS/IOSDefaultEventPluginOrder.js
+243 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSViewAttributes.js
+244 silly gunzTarPerm extractEntry Libraries/ReactIOS/diffRawProperties.js
+245 silly gunzTarPerm extractEntry Libraries/ReactIOS/renderApplication.js
+246 silly gunzTarPerm extractEntry Libraries/ReactIOS/ReactIOSEventEmitter.js
+247 silly gunzTarPerm extractEntry Libraries/RKBackendNode/queryLayoutByID.js
+248 silly gunzTarPerm extractEntry Libraries/Storage/AsyncStorage.ios.js
+249 silly gunzTarPerm extractEntry Libraries/StyleSheet/EdgeInsetsPropType.js
+250 silly gunzTarPerm extractEntry Libraries/StyleSheet/flattenStyle.js
+251 silly gunzTarPerm extractEntry Libraries/StyleSheet/LayoutPropTypes.js
+252 silly gunzTarPerm extractEntry Libraries/StyleSheet/PointPropType.js
+253 silly gunzTarPerm extractEntry Libraries/StyleSheet/styleDiffer.js
+254 silly gunzTarPerm extractEntry Libraries/StyleSheet/StyleSheet.js
+255 silly gunzTarPerm extractEntry Libraries/StyleSheet/StyleSheetPropType.js
+256 silly gunzTarPerm extractEntry Libraries/StyleSheet/StyleSheetRegistry.js
+257 silly gunzTarPerm extractEntry Libraries/StyleSheet/StyleSheetValidation.js
+258 silly gunzTarPerm extractEntry Libraries/Text/TextStylePropTypes.js
+259 silly gunzTarPerm extractEntry Libraries/Text/Text.js
+260 silly gunzTarPerm extractEntry Libraries/Text/RCTShadowRawText.h
+261 silly gunzTarPerm extractEntry Libraries/Text/RCTShadowRawText.m
+262 silly gunzTarPerm extractEntry Libraries/Text/RCTShadowText.h
+263 silly gunzTarPerm extractEntry Libraries/Text/RCTShadowText.m
+264 silly gunzTarPerm extractEntry Libraries/Text/RCTRawTextManager.m
+265 silly gunzTarPerm extractEntry Libraries/Text/RCTText.m
+266 silly gunzTarPerm extractEntry Libraries/Text/RCTText.xcodeproj/project.pbxproj
+267 silly gunzTarPerm extractEntry Libraries/Text/RCTText.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/RCTText.xcscheme
+268 silly gunzTarPerm extractEntry Libraries/Text/RCTText.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/xcschememanagement.plist
+269 silly gunzTarPerm extractEntry Libraries/Text/RCTTextManager.h
+270 silly gunzTarPerm extractEntry Libraries/Text/RCTTextManager.m
+271 silly gunzTarPerm extractEntry Libraries/Text/RCTRawTextManager.h
+272 silly gunzTarPerm extractEntry Libraries/Text/RCTText.h
+273 silly gunzTarPerm extractEntry Libraries/Utilities/AlertIOS.js
+274 silly gunzTarPerm extractEntry Libraries/Utilities/deepFreezeAndThrowOnMutationInDev.js
+275 silly gunzTarPerm extractEntry Libraries/Utilities/RCTRenderingPerf.js
+276 silly gunzTarPerm extractEntry Libraries/Utilities/Dimensions.js
+277 silly gunzTarPerm extractEntry Libraries/Utilities/ErrorUtils.js
+278 silly gunzTarPerm extractEntry Libraries/Utilities/CSSVarConfig.js
+279 silly gunzTarPerm extractEntry Libraries/Utilities/logError.js
+280 silly gunzTarPerm extractEntry Libraries/Utilities/mergeFast.js
+281 silly gunzTarPerm extractEntry Libraries/Utilities/mergeIntoFast.js
+282 silly gunzTarPerm extractEntry Libraries/Utilities/MessageQueue.js
+283 silly gunzTarPerm extractEntry Libraries/Utilities/nativeModulePrefixNormalizer.js
+284 silly gunzTarPerm extractEntry Libraries/Utilities/cssVar.js
+285 silly gunzTarPerm extractEntry Libraries/Utilities/PixelRatio.js
+286 silly gunzTarPerm extractEntry Libraries/Utilities/createStrictShapeTypeChecker.js
+287 silly gunzTarPerm extractEntry Libraries/Utilities/Platform.ios.js
+288 silly gunzTarPerm extractEntry Libraries/Utilities/buildStyleInterpolator.js
+289 silly gunzTarPerm extractEntry Libraries/Utilities/RCTLog.js
+290 silly gunzTarPerm extractEntry Libraries/Utilities/Backstack.ios.js
+291 silly gunzTarPerm extractEntry Libraries/Utilities/truncate.js
+292 silly gunzTarPerm extractEntry Libraries/Utilities/groupByEveryN.js
+293 silly gunzTarPerm extractEntry Libraries/Utilities/differ/deepDiffer.js
+294 silly gunzTarPerm extractEntry Libraries/Utilities/differ/insetsDiffer.js
+295 silly gunzTarPerm extractEntry Libraries/Utilities/differ/matricesDiffer.js
+296 silly gunzTarPerm extractEntry Libraries/Utilities/differ/pointsDiffer.js
+297 silly gunzTarPerm extractEntry Libraries/vendor/core/_shouldPolyfillES6Collection.js
+298 silly gunzTarPerm extractEntry Libraries/vendor/core/getObjectValues.js
+299 silly gunzTarPerm extractEntry Libraries/vendor/core/guid.js
+300 silly gunzTarPerm extractEntry Libraries/vendor/core/throwImmediate.js
+301 silly gunzTarPerm extractEntry Libraries/vendor/core/isEmpty.js
+302 silly gunzTarPerm extractEntry Libraries/vendor/core/ES6Promise.js
+303 silly gunzTarPerm extractEntry Libraries/vendor/core/merge.js
+304 silly gunzTarPerm extractEntry Libraries/vendor/core/mergeHelpers.js
+305 silly gunzTarPerm extractEntry Libraries/vendor/core/mergeInto.js
+306 silly gunzTarPerm extractEntry Libraries/vendor/core/Promise.js
+307 silly gunzTarPerm extractEntry Libraries/vendor/core/Set.js
+308 silly gunzTarPerm extractEntry Libraries/vendor/core/copyProperties.js
+309 silly gunzTarPerm extractEntry Libraries/vendor/core/setImmediate.js
+310 silly gunzTarPerm extractEntry Libraries/vendor/core/clearImmediate.js
+311 silly gunzTarPerm extractEntry Libraries/vendor/core/toIterator.js
+312 silly gunzTarPerm extractEntry Libraries/vendor/core/Map.js
+313 silly gunzTarPerm extractEntry Libraries/vendor/core/immediate/setImmediate.js
+314 silly gunzTarPerm extractEntry Libraries/vendor/crypto/crc32.js
+315 silly gunzTarPerm extractEntry Libraries/vendor/document/selection/DocumentSelectionState.js
+316 silly gunzTarPerm extractEntry Libraries/vendor/emitter/EmitterSubscription.js
+317 silly gunzTarPerm extractEntry Libraries/vendor/emitter/EventEmitter.js
+318 silly gunzTarPerm extractEntry Libraries/vendor/emitter/EventEmitterWithHolding.js
+319 silly gunzTarPerm extractEntry Libraries/vendor/emitter/EventHolder.js
+320 silly gunzTarPerm extractEntry Libraries/vendor/emitter/EventSubscription.js
+321 silly gunzTarPerm extractEntry Libraries/vendor/emitter/EventSubscriptionVendor.js
+322 silly gunzTarPerm extractEntry Libraries/vendor/emitter/EventValidator.js
+323 silly gunzTarPerm extractEntry Libraries/vendor/emitter/mixInEventEmitter.js
+324 silly gunzTarPerm extractEntry Libraries/vendor/react/browser/eventPlugins/PanResponder.js
+325 silly gunzTarPerm extractEntry Libraries/vendor/react/browser/eventPlugins/ResponderEventPlugin.js
+326 silly gunzTarPerm extractEntry Libraries/vendor/react/browser/eventPlugins/ResponderSyntheticEvent.js
+327 silly gunzTarPerm extractEntry Libraries/vendor/react/browser/eventPlugins/ResponderTouchHistoryStore.js
+328 silly gunzTarPerm extractEntry Libraries/vendor/react/browser/eventPlugins/TouchHistoryMath.js
+329 silly gunzTarPerm extractEntry Libraries/vendor/react/core/clamp.js
+330 silly gunzTarPerm extractEntry Libraries/vendor/react/core/ReactInstanceHandles.js
+331 silly gunzTarPerm extractEntry Libraries/vendor/react/event/EventPropagators.js
+332 silly gunzTarPerm extractEntry Libraries/vendor/react/platform/NodeHandle.js
+333 silly gunzTarPerm extractEntry Libraries/vendor/react/platformImplementations/universal/worker/UniversalWorkerNodeHandle.js
+334 silly gunzTarPerm extractEntry Libraries/vendor/react/vendor/core/ExecutionEnvironment.ios.js
+335 silly gunzTarPerm extractEntry Libraries/vendor/react_contrib/interactions/Touchable/Touchable.js
+336 silly gunzTarPerm extractEntry Libraries/vendor/react_contrib/pooledClasses/BoundingDimensions.js
+337 silly gunzTarPerm extractEntry Libraries/vendor/react_contrib/pooledClasses/Position.js
+338 silly gunzTarPerm extractEntry Libraries/vendor/react_contrib/StaticContainer/StaticContainer.js
+339 silly gunzTarPerm extractEntry Libraries/Vibration/VibrationIOS.android.js
+340 silly gunzTarPerm extractEntry Libraries/Vibration/VibrationIOS.ios.js
+341 silly gunzTarPerm extractEntry Libraries/Vibration/RCTVibration.h
+342 silly gunzTarPerm extractEntry Libraries/Vibration/RCTVibration.m
+343 silly gunzTarPerm extractEntry Libraries/Vibration/RCTVibration.xcodeproj/project.pbxproj
+344 silly gunzTarPerm extractEntry Libraries/Vibration/RCTVibration.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/RCTVibration.xcscheme
+345 silly gunzTarPerm extractEntry Libraries/Vibration/RCTVibration.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/xcschememanagement.plist
+346 silly gunzTarPerm extractEntry packager/package.json
+347 silly gunzTarPerm extractEntry packager/README.md
+348 silly gunzTarPerm extractEntry packager/blacklist.js
+349 silly gunzTarPerm extractEntry packager/transformer.js
+350 silly gunzTarPerm extractEntry packager/launchEditor.js
+351 silly gunzTarPerm extractEntry packager/packager.js
+352 silly gunzTarPerm extractEntry packager/parseCommandLine.js
+353 silly gunzTarPerm extractEntry packager/webSocketProxy.js
+354 silly gunzTarPerm extractEntry packager/debugger.html
+355 silly gunzTarPerm extractEntry packager/react-packager/.npmignore
+356 silly gunzTarPerm extractEntry packager/react-packager/index.js
+357 silly gunzTarPerm extractEntry packager/react-packager/__mocks__/debug.js
+358 silly gunzTarPerm extractEntry packager/react-packager/__mocks__/net.js
+359 silly gunzTarPerm extractEntry packager/react-packager/example_project/bar.js
+360 silly gunzTarPerm extractEntry packager/react-packager/example_project/index.js
+361 silly gunzTarPerm extractEntry packager/react-packager/example_project/config.json
+362 silly gunzTarPerm extractEntry packager/react-packager/example_project/foo/foo.js
+363 silly gunzTarPerm extractEntry packager/react-packager/example_project/js/Channel.js
+364 silly gunzTarPerm extractEntry packager/react-packager/example_project/js/code.js
+365 silly gunzTarPerm extractEntry packager/react-packager/example_project/js/main.js
+366 silly gunzTarPerm extractEntry packager/react-packager/example_project/js/XHR.js
+367 silly gunzTarPerm extractEntry packager/react-packager/example_project/public/css/index.css
+368 silly gunzTarPerm extractEntry packager/react-packager/example_project/public/index.html
+369 silly gunzTarPerm extractEntry packager/react-packager/src/Activity/index.js
+370 silly gunzTarPerm extractEntry packager/react-packager/src/Activity/__tests__/Activity-test.js
+371 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/index.js
+372 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/ModuleDescriptor.js
+373 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/haste/index.js
+374 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/haste/__tests__/HasteDependencyResolver-test.js
+375 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/haste/DependencyGraph/docblock.js
+376 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/haste/DependencyGraph/index.js
+377 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/haste/DependencyGraph/__mocks__/fs.js
+378 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/haste/DependencyGraph/__tests__/DependencyGraph-test.js
+379 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/haste/polyfills/console.js
+380 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/haste/polyfills/error-guard.js
+381 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/haste/polyfills/polyfills.js
+382 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/haste/polyfills/prelude.js
+383 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/haste/polyfills/prelude_dev.js
+384 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/haste/polyfills/require.js
+385 silly gunzTarPerm extractEntry packager/react-packager/src/DependencyResolver/node/index.js
+386 silly gunzTarPerm extractEntry packager/react-packager/src/FileWatcher/index.js
+387 silly gunzTarPerm extractEntry packager/react-packager/src/FileWatcher/__mocks__/sane.js
+388 silly gunzTarPerm extractEntry packager/react-packager/src/FileWatcher/__tests__/FileWatcher-test.js
+389 silly gunzTarPerm extractEntry packager/react-packager/src/JSTransformer/README.md
+390 silly gunzTarPerm extractEntry packager/react-packager/src/JSTransformer/Cache.js
+391 silly gunzTarPerm extractEntry packager/react-packager/src/JSTransformer/index.js
+392 silly gunzTarPerm extractEntry packager/react-packager/src/JSTransformer/worker.js
+393 silly gunzTarPerm extractEntry packager/react-packager/src/JSTransformer/__mocks__/q.js
+394 silly gunzTarPerm extractEntry packager/react-packager/src/JSTransformer/__mocks__/underscore.js
+395 silly gunzTarPerm extractEntry packager/react-packager/src/JSTransformer/__mocks__/worker.js
+396 silly gunzTarPerm extractEntry packager/react-packager/src/JSTransformer/__tests__/Cache-test.js
+397 silly gunzTarPerm extractEntry packager/react-packager/src/JSTransformer/__tests__/Transformer-test.js
+398 silly gunzTarPerm extractEntry packager/react-packager/src/lib/declareOpts.js
+399 silly gunzTarPerm extractEntry packager/react-packager/src/lib/__mocks__/declareOpts.js
+400 silly gunzTarPerm extractEntry packager/react-packager/src/lib/__tests__/declareOpts-test.js
+401 silly gunzTarPerm extractEntry packager/react-packager/src/Packager/base64-vlq.js
+402 silly gunzTarPerm extractEntry packager/react-packager/src/Packager/index.js
+403 silly gunzTarPerm extractEntry packager/react-packager/src/Packager/Package.js
+404 silly gunzTarPerm extractEntry packager/react-packager/src/Packager/__tests__/Package-test.js
+405 silly gunzTarPerm extractEntry packager/react-packager/src/Packager/__tests__/Packager-test.js
+406 silly gunzTarPerm extractEntry packager/react-packager/src/Server/index.js
+407 silly gunzTarPerm extractEntry packager/react-packager/src/Server/__tests__/Server-test.js
+408 silly gunzTarPerm extractEntry packager/launchPackager.command
+409 silly gunzTarPerm extractEntry packager/README.md~
+410 silly gunzTarPerm extractEntry packager/launchChromeDevTools.applescript
+411 silly gunzTarPerm extractEntry packager/packager.sh
+412 silly gunzTarPerm extractEntry PATENTS
+413 silly gunzTarPerm extractEntry React/Base/RCTJSMethodRegistrar.h
+414 silly gunzTarPerm extractEntry React/Base/RCTAssert.h
+415 silly gunzTarPerm extractEntry React/Base/RCTBridge.h
+416 silly gunzTarPerm extractEntry React/Base/RCTBridge.m
+417 silly gunzTarPerm extractEntry React/Base/RCTBridgeModule.h
+418 silly gunzTarPerm extractEntry React/Base/RCTCache.h
+419 silly gunzTarPerm extractEntry React/Base/RCTCache.m
+420 silly gunzTarPerm extractEntry React/Base/RCTConvert.h
+421 silly gunzTarPerm extractEntry React/Base/RCTConvert.m
+422 silly gunzTarPerm extractEntry React/Base/RCTDevMenu.h
+423 silly gunzTarPerm extractEntry React/Base/RCTDevMenu.m
+424 silly gunzTarPerm extractEntry React/Base/RCTEventDispatcher.h
+425 silly gunzTarPerm extractEntry React/Base/RCTEventDispatcher.m
+426 silly gunzTarPerm extractEntry React/Base/RCTInvalidating.h
+427 silly gunzTarPerm extractEntry React/Base/RCTJavaScriptExecutor.h
+428 silly gunzTarPerm extractEntry React/Base/RCTAssert.m
+429 silly gunzTarPerm extractEntry React/Base/RCTKeyCommands.h
+430 silly gunzTarPerm extractEntry React/Base/RCTKeyCommands.m
+431 silly gunzTarPerm extractEntry React/Base/RCTLog.h
+432 silly gunzTarPerm extractEntry React/Base/RCTLog.m
+433 silly gunzTarPerm extractEntry React/Base/RCTRedBox.h
+434 silly gunzTarPerm extractEntry React/Base/RCTRedBox.m
+435 silly gunzTarPerm extractEntry React/Base/RCTRootView.h
+436 silly gunzTarPerm extractEntry React/Base/RCTRootView.m
+437 silly gunzTarPerm extractEntry React/Base/RCTSparseArray.h
+438 silly gunzTarPerm extractEntry React/Base/RCTSparseArray.m
+439 silly gunzTarPerm extractEntry React/Base/RCTTouchHandler.h
+440 silly gunzTarPerm extractEntry React/Base/RCTTouchHandler.m
+441 silly gunzTarPerm extractEntry React/Base/RCTUtils.h
+442 silly gunzTarPerm extractEntry React/Base/RCTUtils.m
+443 silly gunzTarPerm extractEntry React/Executors/RCTContextExecutor.h
+444 silly gunzTarPerm extractEntry React/Executors/RCTContextExecutor.m
+445 silly gunzTarPerm extractEntry React/Executors/RCTWebViewExecutor.h
+446 silly gunzTarPerm extractEntry React/Executors/RCTWebViewExecutor.m
+447 silly gunzTarPerm extractEntry React/Layout/Layout.c
+448 silly gunzTarPerm extractEntry React/Layout/Layout.h
+449 silly gunzTarPerm extractEntry React/Modules/RCTSourceCode.h
+450 silly gunzTarPerm extractEntry React/Modules/RCTAlertManager.h
+451 silly gunzTarPerm extractEntry React/Modules/RCTAppState.h
+452 silly gunzTarPerm extractEntry React/Modules/RCTAppState.m
+453 silly gunzTarPerm extractEntry React/Modules/RCTAsyncLocalStorage.h
+454 silly gunzTarPerm extractEntry React/Modules/RCTAsyncLocalStorage.m
+455 silly gunzTarPerm extractEntry React/Modules/RCTExceptionsManager.h
+456 silly gunzTarPerm extractEntry React/Modules/RCTExceptionsManager.m
+457 silly gunzTarPerm extractEntry React/Modules/RCTAlertManager.m
+458 silly gunzTarPerm extractEntry React/Modules/RCTSourceCode.m
+459 silly gunzTarPerm extractEntry React/Modules/RCTStatusBarManager.h
+460 silly gunzTarPerm extractEntry React/Modules/RCTStatusBarManager.m
+461 silly gunzTarPerm extractEntry React/Modules/RCTTiming.h
+462 silly gunzTarPerm extractEntry React/Modules/RCTTiming.m
+463 silly gunzTarPerm extractEntry React/Modules/RCTUIManager.h
+464 silly gunzTarPerm extractEntry React/Modules/RCTUIManager.m
+465 silly gunzTarPerm extractEntry React/React.xcodeproj/project.pbxproj
+466 silly gunzTarPerm extractEntry React/React.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/React.xcscheme
+467 silly gunzTarPerm extractEntry React/React.xcodeproj/xcuserdata/amasad.xcuserdatad/xcschemes/xcschememanagement.plist
+468 silly gunzTarPerm extractEntry React/Views/RCTSwitch.m
+469 silly gunzTarPerm extractEntry React/Views/RCTAnimationType.h
+470 silly gunzTarPerm extractEntry React/Views/RCTDatePickerManager.h
+471 silly gunzTarPerm extractEntry React/Views/RCTDatePickerManager.m
+472 silly gunzTarPerm extractEntry React/Views/RCTMap.h
+473 silly gunzTarPerm extractEntry React/Views/RCTMap.m
+474 silly gunzTarPerm extractEntry React/Views/RCTMapManager.h
+475 silly gunzTarPerm extractEntry React/Views/RCTMapManager.m
+476 silly gunzTarPerm extractEntry React/Views/RCTNavigator.h
+477 silly gunzTarPerm extractEntry React/Views/RCTNavigator.m
+478 silly gunzTarPerm extractEntry React/Views/RCTNavigatorManager.h
+479 silly gunzTarPerm extractEntry React/Views/RCTNavigatorManager.m
+480 silly gunzTarPerm extractEntry React/Views/RCTNavItem.h
+481 silly gunzTarPerm extractEntry React/Views/RCTNavItem.m
+482 silly gunzTarPerm extractEntry React/Views/RCTNavItemManager.h
+483 silly gunzTarPerm extractEntry React/Views/RCTNavItemManager.m
+484 silly gunzTarPerm extractEntry React/Views/RCTPicker.h
+485 silly gunzTarPerm extractEntry React/Views/RCTPicker.m
+486 silly gunzTarPerm extractEntry React/Views/RCTPickerManager.h
+487 silly gunzTarPerm extractEntry React/Views/RCTPickerManager.m
+488 silly gunzTarPerm extractEntry React/Views/RCTPointerEvents.h
+489 silly gunzTarPerm extractEntry React/Views/RCTScrollableProtocol.h
+490 silly gunzTarPerm extractEntry React/Views/RCTScrollView.h
+491 silly gunzTarPerm extractEntry React/Views/RCTScrollView.m
+492 silly gunzTarPerm extractEntry React/Views/RCTScrollViewManager.h
+493 silly gunzTarPerm extractEntry React/Views/RCTScrollViewManager.m
+494 silly gunzTarPerm extractEntry React/Views/RCTShadowView.h
+495 silly gunzTarPerm extractEntry React/Views/RCTShadowView.m
+496 silly gunzTarPerm extractEntry React/Views/RCTSliderManager.h
+497 silly gunzTarPerm extractEntry React/Views/RCTSliderManager.m
+498 silly gunzTarPerm extractEntry React/Views/RCTSwitch.h
+499 silly gunzTarPerm extractEntry React/Views/RCTAutoInsetsProtocol.h
+500 silly gunzTarPerm extractEntry React/Views/RCTSwitchManager.h
+501 silly gunzTarPerm extractEntry React/Views/RCTSwitchManager.m
+502 silly gunzTarPerm extractEntry React/Views/RCTTabBar.h
+503 silly gunzTarPerm extractEntry React/Views/RCTTabBar.m
+504 silly gunzTarPerm extractEntry React/Views/RCTTabBarItem.h
+505 silly gunzTarPerm extractEntry React/Views/RCTTabBarItem.m
+506 silly gunzTarPerm extractEntry React/Views/RCTTabBarItemManager.h
+507 silly gunzTarPerm extractEntry React/Views/RCTTabBarItemManager.m
+508 silly gunzTarPerm extractEntry React/Views/RCTTabBarManager.h
+509 silly gunzTarPerm extractEntry React/Views/RCTTabBarManager.m
+510 silly gunzTarPerm extractEntry React/Views/RCTTextField.h
+511 silly gunzTarPerm extractEntry React/Views/RCTTextField.m
+512 silly gunzTarPerm extractEntry React/Views/RCTTextFieldManager.h
+513 silly gunzTarPerm extractEntry React/Views/RCTTextFieldManager.m
+514 silly gunzTarPerm extractEntry React/Views/RCTUIActivityIndicatorViewManager.h
+515 silly gunzTarPerm extractEntry React/Views/RCTUIActivityIndicatorViewManager.m
+516 silly gunzTarPerm extractEntry React/Views/RCTView.h
+517 silly gunzTarPerm extractEntry React/Views/RCTView.m
+518 silly gunzTarPerm extractEntry React/Views/RCTViewControllerProtocol.h
+519 silly gunzTarPerm extractEntry React/Views/RCTViewManager.h
+520 silly gunzTarPerm extractEntry React/Views/RCTViewManager.m
+521 silly gunzTarPerm extractEntry React/Views/RCTViewNodeProtocol.h
+522 silly gunzTarPerm extractEntry React/Views/RCTWebView.h
+523 silly gunzTarPerm extractEntry React/Views/RCTWebView.m
+524 silly gunzTarPerm extractEntry React/Views/RCTWebViewManager.h
+525 silly gunzTarPerm extractEntry React/Views/RCTWebViewManager.m
+526 silly gunzTarPerm extractEntry React/Views/RCTWrapperViewController.h
+527 silly gunzTarPerm extractEntry React/Views/RCTWrapperViewController.m
+528 silly gunzTarPerm extractEntry React/Views/UIView+React.h
+529 silly gunzTarPerm extractEntry React/Views/UIView+React.m
+530 verbose read json /Users/take/study/react-native/SampleApp/node_modules/react-native/package.json
+531 silly lockFile 4f0535e4-pleApp-node-modules-react-native /Users/take/study/react-native/SampleApp/node_modules/react-native
+532 silly lockFile 4f0535e4-pleApp-node-modules-react-native /Users/take/study/react-native/SampleApp/node_modules/react-native
+533 silly lockFile e4a1c831-m-react-native-0-3-1-package-tgz /Users/take/.npm/react-native/0.3.1/package.tgz
+534 silly lockFile e4a1c831-m-react-native-0-3-1-package-tgz /Users/take/.npm/react-native/0.3.1/package.tgz
+535 info preinstall react-native@0.3.1
+536 verbose from cache /Users/take/study/react-native/SampleApp/node_modules/react-native/package.json
+537 verbose readDependencies using package.json deps
+538 verbose from cache /Users/take/study/react-native/SampleApp/node_modules/react-native/package.json
+539 verbose readDependencies using package.json deps
+540 verbose cache add [ 'connect@2.8.3', null ]
+541 verbose cache add name=undefined spec="connect@2.8.3" args=["connect@2.8.3",null]
+542 verbose parsed url { pathname: 'connect@2.8.3',
+542 verbose parsed url   path: 'connect@2.8.3',
+542 verbose parsed url   href: 'connect@2.8.3' }
+543 verbose cache add name="connect" spec="2.8.3" args=["connect","2.8.3"]
+544 verbose parsed url { pathname: '2.8.3', path: '2.8.3', href: '2.8.3' }
+545 verbose addNamed [ 'connect', '2.8.3' ]
+546 verbose addNamed [ '2.8.3', '2.8.3' ]
+547 silly lockFile 5e17b07e-connect-2-8-3 connect@2.8.3
+548 verbose lock connect@2.8.3 /Users/take/.npm/5e17b07e-connect-2-8-3.lock
+549 verbose cache add [ 'jstransform@10.0.1', null ]
+550 verbose cache add name=undefined spec="jstransform@10.0.1" args=["jstransform@10.0.1",null]
+551 verbose parsed url { pathname: 'jstransform@10.0.1',
+551 verbose parsed url   path: 'jstransform@10.0.1',
+551 verbose parsed url   href: 'jstransform@10.0.1' }
+552 verbose cache add name="jstransform" spec="10.0.1" args=["jstransform","10.0.1"]
+553 verbose parsed url { pathname: '10.0.1', path: '10.0.1', href: '10.0.1' }
+554 verbose addNamed [ 'jstransform', '10.0.1' ]
+555 verbose addNamed [ '10.0.1', '10.0.1' ]
+556 silly lockFile 46f857b2-jstransform-10-0-1 jstransform@10.0.1
+557 verbose lock jstransform@10.0.1 /Users/take/.npm/46f857b2-jstransform-10-0-1.lock
+558 verbose cache add [ 'react-timer-mixin@^0.13.1', null ]
+559 verbose cache add name=undefined spec="react-timer-mixin@^0.13.1" args=["react-timer-mixin@^0.13.1",null]
+560 verbose parsed url { pathname: 'react-timer-mixin@^0.13.1',
+560 verbose parsed url   path: 'react-timer-mixin@^0.13.1',
+560 verbose parsed url   href: 'react-timer-mixin@^0.13.1' }
+561 verbose cache add name="react-timer-mixin" spec="^0.13.1" args=["react-timer-mixin","^0.13.1"]
+562 verbose parsed url { pathname: '^0.13.1', path: '^0.13.1', href: '^0.13.1' }
+563 verbose addNamed [ 'react-timer-mixin', '^0.13.1' ]
+564 verbose addNamed [ null, null ]
+565 silly lockFile 34a481da-react-timer-mixin-0-13-1 react-timer-mixin@^0.13.1
+566 verbose lock react-timer-mixin@^0.13.1 /Users/take/.npm/34a481da-react-timer-mixin-0-13-1.lock
+567 info addNameTag [ 'react-timer-mixin', '^0.13.1' ]
+568 verbose cache add [ 'react-tools@0.13.0-rc2', null ]
+569 verbose cache add name=undefined spec="react-tools@0.13.0-rc2" args=["react-tools@0.13.0-rc2",null]
+570 verbose parsed url { pathname: 'react-tools@0.13.0-rc2',
+570 verbose parsed url   path: 'react-tools@0.13.0-rc2',
+570 verbose parsed url   href: 'react-tools@0.13.0-rc2' }
+571 verbose cache add name="react-tools" spec="0.13.0-rc2" args=["react-tools","0.13.0-rc2"]
+572 verbose parsed url { pathname: '0.13.0-rc2',
+572 verbose parsed url   path: '0.13.0-rc2',
+572 verbose parsed url   href: '0.13.0-rc2' }
+573 verbose addNamed [ 'react-tools', '0.13.0-rc2' ]
+574 verbose addNamed [ '0.13.0-rc2', '0.13.0-rc2' ]
+575 silly lockFile f2e24482-react-tools-0-13-0-rc2 react-tools@0.13.0-rc2
+576 verbose lock react-tools@0.13.0-rc2 /Users/take/.npm/f2e24482-react-tools-0-13-0-rc2.lock
+577 verbose cache add [ 'rebound@^0.0.12', null ]
+578 verbose cache add name=undefined spec="rebound@^0.0.12" args=["rebound@^0.0.12",null]
+579 verbose parsed url { pathname: 'rebound@^0.0.12',
+579 verbose parsed url   path: 'rebound@^0.0.12',
+579 verbose parsed url   href: 'rebound@^0.0.12' }
+580 verbose cache add name="rebound" spec="^0.0.12" args=["rebound","^0.0.12"]
+581 verbose parsed url { pathname: '^0.0.12', path: '^0.0.12', href: '^0.0.12' }
+582 verbose addNamed [ 'rebound', '^0.0.12' ]
+583 verbose addNamed [ null, null ]
+584 silly lockFile cf9a511c-rebound-0-0-12 rebound@^0.0.12
+585 verbose lock rebound@^0.0.12 /Users/take/.npm/cf9a511c-rebound-0-0-12.lock
+586 verbose cache add [ 'source-map@0.1.31', null ]
+587 verbose cache add name=undefined spec="source-map@0.1.31" args=["source-map@0.1.31",null]
+588 verbose parsed url { pathname: 'source-map@0.1.31',
+588 verbose parsed url   path: 'source-map@0.1.31',
+588 verbose parsed url   href: 'source-map@0.1.31' }
+589 verbose cache add name="source-map" spec="0.1.31" args=["source-map","0.1.31"]
+590 verbose parsed url { pathname: '0.1.31', path: '0.1.31', href: '0.1.31' }
+591 verbose addNamed [ 'source-map', '0.1.31' ]
+592 verbose addNamed [ '0.1.31', '0.1.31' ]
+593 silly lockFile da25d7af-source-map-0-1-31 source-map@0.1.31
+594 verbose lock source-map@0.1.31 /Users/take/.npm/da25d7af-source-map-0-1-31.lock
+595 verbose cache add [ 'stacktrace-parser@0.1.1', null ]
+596 verbose cache add name=undefined spec="stacktrace-parser@0.1.1" args=["stacktrace-parser@0.1.1",null]
+597 verbose parsed url { pathname: 'stacktrace-parser@0.1.1',
+597 verbose parsed url   path: 'stacktrace-parser@0.1.1',
+597 verbose parsed url   href: 'stacktrace-parser@0.1.1' }
+598 verbose cache add name="stacktrace-parser" spec="0.1.1" args=["stacktrace-parser","0.1.1"]
+599 verbose parsed url { pathname: '0.1.1', path: '0.1.1', href: '0.1.1' }
+600 verbose addNamed [ 'stacktrace-parser', '0.1.1' ]
+601 verbose addNamed [ '0.1.1', '0.1.1' ]
+602 silly lockFile 2c3bdc45-stacktrace-parser-0-1-1 stacktrace-parser@0.1.1
+603 verbose lock stacktrace-parser@0.1.1 /Users/take/.npm/2c3bdc45-stacktrace-parser-0-1-1.lock
+604 verbose cache add [ 'absolute-path@0.0.0', null ]
+605 verbose cache add name=undefined spec="absolute-path@0.0.0" args=["absolute-path@0.0.0",null]
+606 verbose parsed url { pathname: 'absolute-path@0.0.0',
+606 verbose parsed url   path: 'absolute-path@0.0.0',
+606 verbose parsed url   href: 'absolute-path@0.0.0' }
+607 verbose cache add name="absolute-path" spec="0.0.0" args=["absolute-path","0.0.0"]
+608 verbose parsed url { pathname: '0.0.0', path: '0.0.0', href: '0.0.0' }
+609 verbose addNamed [ 'absolute-path', '0.0.0' ]
+610 verbose addNamed [ '0.0.0', '0.0.0' ]
+611 silly lockFile 3572518e-absolute-path-0-0-0 absolute-path@0.0.0
+612 verbose lock absolute-path@0.0.0 /Users/take/.npm/3572518e-absolute-path-0-0-0.lock
+613 info addNameTag [ 'rebound', '^0.0.12' ]
+614 verbose url raw connect/2.8.3
+615 verbose url resolving [ 'https://registry.npmjs.org/', './connect/2.8.3' ]
+616 verbose url resolved https://registry.npmjs.org/connect/2.8.3
+617 info trying registry request attempt 1 at 21:19:23
+618 verbose etag "64AXXFSA68VRWQAPMR956IYVF"
+619 http GET https://registry.npmjs.org/connect/2.8.3
+620 verbose url raw jstransform/10.0.1
+621 verbose url resolving [ 'https://registry.npmjs.org/', './jstransform/10.0.1' ]
+622 verbose url resolved https://registry.npmjs.org/jstransform/10.0.1
+623 info trying registry request attempt 1 at 21:19:23
+624 verbose etag "AVTPK30ZUGPYEOWV5U9E3KOYJ"
+625 http GET https://registry.npmjs.org/jstransform/10.0.1
+626 verbose url raw react-timer-mixin
+627 verbose url resolving [ 'https://registry.npmjs.org/', './react-timer-mixin' ]
+628 verbose url resolved https://registry.npmjs.org/react-timer-mixin
+629 info trying registry request attempt 1 at 21:19:23
+630 verbose etag "34TSG7YM35T18DBYVORZ71UAV"
+631 http GET https://registry.npmjs.org/react-timer-mixin
+632 verbose cache add [ 'debug@~2.1.0', null ]
+633 verbose cache add name=undefined spec="debug@~2.1.0" args=["debug@~2.1.0",null]
+634 verbose parsed url { pathname: 'debug@~2.1.0',
+634 verbose parsed url   path: 'debug@~2.1.0',
+634 verbose parsed url   href: 'debug@~2.1.0' }
+635 verbose cache add name="debug" spec="~2.1.0" args=["debug","~2.1.0"]
+636 verbose parsed url { pathname: '~2.1.0', path: '~2.1.0', href: '~2.1.0' }
+637 verbose addNamed [ 'debug', '~2.1.0' ]
+638 verbose addNamed [ null, '>=2.1.0- <2.2.0-' ]
+639 silly lockFile 8ab3c2d7-debug-2-1-0 debug@~2.1.0
+640 verbose lock debug@~2.1.0 /Users/take/.npm/8ab3c2d7-debug-2-1-0.lock
+641 verbose cache add [ 'joi@~5.1.0', null ]
+642 verbose cache add name=undefined spec="joi@~5.1.0" args=["joi@~5.1.0",null]
+643 verbose parsed url { pathname: 'joi@~5.1.0',
+643 verbose parsed url   path: 'joi@~5.1.0',
+643 verbose parsed url   href: 'joi@~5.1.0' }
+644 verbose cache add name="joi" spec="~5.1.0" args=["joi","~5.1.0"]
+645 verbose parsed url { pathname: '~5.1.0', path: '~5.1.0', href: '~5.1.0' }
+646 verbose addNamed [ 'joi', '~5.1.0' ]
+647 verbose addNamed [ null, '>=5.1.0- <5.2.0-' ]
+648 silly lockFile 184db87a-joi-5-1-0 joi@~5.1.0
+649 verbose lock joi@~5.1.0 /Users/take/.npm/184db87a-joi-5-1-0.lock
+650 verbose cache add [ 'module-deps@3.5.6', null ]
+651 verbose cache add name=undefined spec="module-deps@3.5.6" args=["module-deps@3.5.6",null]
+652 verbose parsed url { pathname: 'module-deps@3.5.6',
+652 verbose parsed url   path: 'module-deps@3.5.6',
+652 verbose parsed url   href: 'module-deps@3.5.6' }
+653 verbose cache add name="module-deps" spec="3.5.6" args=["module-deps","3.5.6"]
+654 verbose parsed url { pathname: '3.5.6', path: '3.5.6', href: '3.5.6' }
+655 verbose addNamed [ 'module-deps', '3.5.6' ]
+656 verbose addNamed [ '3.5.6', '3.5.6' ]
+657 silly lockFile 5bd8b2f5-module-deps-3-5-6 module-deps@3.5.6
+658 verbose lock module-deps@3.5.6 /Users/take/.npm/5bd8b2f5-module-deps-3-5-6.lock
+659 verbose cache add [ 'optimist@0.6.1', null ]
+660 verbose cache add name=undefined spec="optimist@0.6.1" args=["optimist@0.6.1",null]
+661 verbose parsed url { pathname: 'optimist@0.6.1',
+661 verbose parsed url   path: 'optimist@0.6.1',
+661 verbose parsed url   href: 'optimist@0.6.1' }
+662 verbose cache add name="optimist" spec="0.6.1" args=["optimist","0.6.1"]
+663 verbose parsed url { pathname: '0.6.1', path: '0.6.1', href: '0.6.1' }
+664 verbose addNamed [ 'optimist', '0.6.1' ]
+665 verbose addNamed [ '0.6.1', '0.6.1' ]
+666 silly lockFile 0fc74eb8-optimist-0-6-1 optimist@0.6.1
+667 verbose lock optimist@0.6.1 /Users/take/.npm/0fc74eb8-optimist-0-6-1.lock
+668 verbose cache add [ 'q@1.0.1', null ]
+669 verbose cache add name=undefined spec="q@1.0.1" args=["q@1.0.1",null]
+670 verbose parsed url { pathname: 'q@1.0.1', path: 'q@1.0.1', href: 'q@1.0.1' }
+671 verbose cache add name="q" spec="1.0.1" args=["q","1.0.1"]
+672 verbose parsed url { pathname: '1.0.1', path: '1.0.1', href: '1.0.1' }
+673 verbose addNamed [ 'q', '1.0.1' ]
+674 verbose addNamed [ '1.0.1', '1.0.1' ]
+675 silly lockFile 5720ee24-q-1-0-1 q@1.0.1
+676 verbose lock q@1.0.1 /Users/take/.npm/5720ee24-q-1-0-1.lock
+677 verbose cache add [ 'sane@1.0.1', null ]
+678 verbose cache add name=undefined spec="sane@1.0.1" args=["sane@1.0.1",null]
+679 verbose parsed url { pathname: 'sane@1.0.1',
+679 verbose parsed url   path: 'sane@1.0.1',
+679 verbose parsed url   href: 'sane@1.0.1' }
+680 verbose cache add name="sane" spec="1.0.1" args=["sane","1.0.1"]
+681 verbose parsed url { pathname: '1.0.1', path: '1.0.1', href: '1.0.1' }
+682 verbose addNamed [ 'sane', '1.0.1' ]
+683 verbose addNamed [ '1.0.1', '1.0.1' ]
+684 silly lockFile c0a7c406-sane-1-0-1 sane@1.0.1
+685 verbose lock sane@1.0.1 /Users/take/.npm/c0a7c406-sane-1-0-1.lock
+686 verbose cache add [ 'uglify-js@~2.4.16', null ]
+687 verbose cache add name=undefined spec="uglify-js@~2.4.16" args=["uglify-js@~2.4.16",null]
+688 verbose parsed url { pathname: 'uglify-js@~2.4.16',
+688 verbose parsed url   path: 'uglify-js@~2.4.16',
+688 verbose parsed url   href: 'uglify-js@~2.4.16' }
+689 verbose cache add name="uglify-js" spec="~2.4.16" args=["uglify-js","~2.4.16"]
+690 verbose parsed url { pathname: '~2.4.16', path: '~2.4.16', href: '~2.4.16' }
+691 verbose addNamed [ 'uglify-js', '~2.4.16' ]
+692 verbose addNamed [ null, '>=2.4.16- <2.5.0-' ]
+693 silly lockFile 26df7cc8-uglify-js-2-4-16 uglify-js@~2.4.16
+694 verbose lock uglify-js@~2.4.16 /Users/take/.npm/26df7cc8-uglify-js-2-4-16.lock
+695 verbose cache add [ 'underscore@1.7.0', null ]
+696 verbose cache add name=undefined spec="underscore@1.7.0" args=["underscore@1.7.0",null]
+697 verbose parsed url { pathname: 'underscore@1.7.0',
+697 verbose parsed url   path: 'underscore@1.7.0',
+697 verbose parsed url   href: 'underscore@1.7.0' }
+698 verbose cache add name="underscore" spec="1.7.0" args=["underscore","1.7.0"]
+699 verbose parsed url { pathname: '1.7.0', path: '1.7.0', href: '1.7.0' }
+700 verbose addNamed [ 'underscore', '1.7.0' ]
+701 verbose addNamed [ '1.7.0', '1.7.0' ]
+702 silly lockFile 900da168-underscore-1-7-0 underscore@1.7.0
+703 verbose lock underscore@1.7.0 /Users/take/.npm/900da168-underscore-1-7-0.lock
+704 verbose cache add [ 'worker-farm@1.1.0', null ]
+705 verbose cache add name=undefined spec="worker-farm@1.1.0" args=["worker-farm@1.1.0",null]
+706 verbose parsed url { pathname: 'worker-farm@1.1.0',
+706 verbose parsed url   path: 'worker-farm@1.1.0',
+706 verbose parsed url   href: 'worker-farm@1.1.0' }
+707 verbose cache add name="worker-farm" spec="1.1.0" args=["worker-farm","1.1.0"]
+708 verbose parsed url { pathname: '1.1.0', path: '1.1.0', href: '1.1.0' }
+709 verbose addNamed [ 'worker-farm', '1.1.0' ]
+710 verbose addNamed [ '1.1.0', '1.1.0' ]
+711 silly lockFile d4a08fa4-worker-farm-1-1-0 worker-farm@1.1.0
+712 verbose lock worker-farm@1.1.0 /Users/take/.npm/d4a08fa4-worker-farm-1-1-0.lock
+713 verbose cache add [ 'yargs@1.3.2', null ]
+714 verbose cache add name=undefined spec="yargs@1.3.2" args=["yargs@1.3.2",null]
+715 verbose parsed url { pathname: 'yargs@1.3.2',
+715 verbose parsed url   path: 'yargs@1.3.2',
+715 verbose parsed url   href: 'yargs@1.3.2' }
+716 verbose cache add name="yargs" spec="1.3.2" args=["yargs","1.3.2"]
+717 verbose parsed url { pathname: '1.3.2', path: '1.3.2', href: '1.3.2' }
+718 verbose addNamed [ 'yargs', '1.3.2' ]
+719 verbose addNamed [ '1.3.2', '1.3.2' ]
+720 silly lockFile a736a487-yargs-1-3-2 yargs@1.3.2
+721 verbose lock yargs@1.3.2 /Users/take/.npm/a736a487-yargs-1-3-2.lock
+722 verbose cache add [ 'ws@0.4.31', null ]
+723 verbose cache add name=undefined spec="ws@0.4.31" args=["ws@0.4.31",null]
+724 verbose parsed url { pathname: 'ws@0.4.31', path: 'ws@0.4.31', href: 'ws@0.4.31' }
+725 verbose cache add name="ws" spec="0.4.31" args=["ws","0.4.31"]
+726 verbose parsed url { pathname: '0.4.31', path: '0.4.31', href: '0.4.31' }
+727 verbose addNamed [ 'ws', '0.4.31' ]
+728 verbose addNamed [ '0.4.31', '0.4.31' ]
+729 silly lockFile 53e67403-ws-0-4-31 ws@0.4.31
+730 verbose lock ws@0.4.31 /Users/take/.npm/53e67403-ws-0-4-31.lock
+731 silly addNameRange { name: 'debug', range: '>=2.1.0- <2.2.0-', hasData: false }
+732 silly addNameRange { name: 'joi', range: '>=5.1.0- <5.2.0-', hasData: false }
+733 silly addNameRange { name: 'uglify-js', range: '>=2.4.16- <2.5.0-', hasData: false }
+734 verbose url raw react-tools/0.13.0-rc2
+735 verbose url resolving [ 'https://registry.npmjs.org/', './react-tools/0.13.0-rc2' ]
+736 verbose url resolved https://registry.npmjs.org/react-tools/0.13.0-rc2
+737 info trying registry request attempt 1 at 21:19:23
+738 verbose etag "45G4N9WN2WOYHSE30KRFV5YGF"
+739 http GET https://registry.npmjs.org/react-tools/0.13.0-rc2
+740 verbose url raw rebound
+741 verbose url resolving [ 'https://registry.npmjs.org/', './rebound' ]
+742 verbose url resolved https://registry.npmjs.org/rebound
+743 info trying registry request attempt 1 at 21:19:23
+744 verbose etag "DH2UDQW7FWBAE7EX1B8ISMIU2"
+745 http GET https://registry.npmjs.org/rebound
+746 verbose url raw source-map/0.1.31
+747 verbose url resolving [ 'https://registry.npmjs.org/', './source-map/0.1.31' ]
+748 verbose url resolved https://registry.npmjs.org/source-map/0.1.31
+749 info trying registry request attempt 1 at 21:19:23
+750 verbose etag "6X6700A4ARF6BEP1WI9Y86P6"
+751 http GET https://registry.npmjs.org/source-map/0.1.31
+752 verbose url raw stacktrace-parser/0.1.1
+753 verbose url resolving [ 'https://registry.npmjs.org/', './stacktrace-parser/0.1.1' ]
+754 verbose url resolved https://registry.npmjs.org/stacktrace-parser/0.1.1
+755 info trying registry request attempt 1 at 21:19:23
+756 verbose etag "1DQNXL705GTPF24J5P5VUEKXS"
+757 http GET https://registry.npmjs.org/stacktrace-parser/0.1.1
+758 verbose url raw absolute-path/0.0.0
+759 verbose url resolving [ 'https://registry.npmjs.org/', './absolute-path/0.0.0' ]
+760 verbose url resolved https://registry.npmjs.org/absolute-path/0.0.0
+761 info trying registry request attempt 1 at 21:19:23
+762 verbose etag "4288PGEF8OV0N9AJGCGH5OGG6"
+763 http GET https://registry.npmjs.org/absolute-path/0.0.0
+764 verbose url raw debug
+765 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+766 verbose url resolved https://registry.npmjs.org/debug
+767 info trying registry request attempt 1 at 21:19:23
+768 verbose etag "212SA7HQQVG2Y8DFK0ZGFQIGH"
+769 http GET https://registry.npmjs.org/debug
+770 verbose url raw module-deps/3.5.6
+771 verbose url resolving [ 'https://registry.npmjs.org/', './module-deps/3.5.6' ]
+772 verbose url resolved https://registry.npmjs.org/module-deps/3.5.6
+773 info trying registry request attempt 1 at 21:19:23
+774 verbose etag "AP0ZSNVBWO4O1BTGQPC2LDNRA"
+775 http GET https://registry.npmjs.org/module-deps/3.5.6
+776 verbose url raw optimist/0.6.1
+777 verbose url resolving [ 'https://registry.npmjs.org/', './optimist/0.6.1' ]
+778 verbose url resolved https://registry.npmjs.org/optimist/0.6.1
+779 info trying registry request attempt 1 at 21:19:23
+780 verbose etag "CNA0XOVD179S04LHL07IR9HBF"
+781 http GET https://registry.npmjs.org/optimist/0.6.1
+782 verbose url raw joi
+783 verbose url resolving [ 'https://registry.npmjs.org/', './joi' ]
+784 verbose url resolved https://registry.npmjs.org/joi
+785 info trying registry request attempt 1 at 21:19:23
+786 verbose etag "467FY75QTPCMRXZUCV87CAASF"
+787 http GET https://registry.npmjs.org/joi
+788 verbose url raw q/1.0.1
+789 verbose url resolving [ 'https://registry.npmjs.org/', './q/1.0.1' ]
+790 verbose url resolved https://registry.npmjs.org/q/1.0.1
+791 info trying registry request attempt 1 at 21:19:23
+792 verbose etag "2EQVVCQ24UWWLQSEQY6A37OXF"
+793 http GET https://registry.npmjs.org/q/1.0.1
+794 verbose url raw underscore/1.7.0
+795 verbose url resolving [ 'https://registry.npmjs.org/', './underscore/1.7.0' ]
+796 verbose url resolved https://registry.npmjs.org/underscore/1.7.0
+797 info trying registry request attempt 1 at 21:19:23
+798 verbose etag "B5SXQWQV0THW3FJ7GWR1G1D2"
+799 http GET https://registry.npmjs.org/underscore/1.7.0
+800 verbose url raw sane/1.0.1
+801 verbose url resolving [ 'https://registry.npmjs.org/', './sane/1.0.1' ]
+802 verbose url resolved https://registry.npmjs.org/sane/1.0.1
+803 info trying registry request attempt 1 at 21:19:23
+804 verbose etag "8JCHI952X4B9A21Q4JF9BEQUN"
+805 http GET https://registry.npmjs.org/sane/1.0.1
+806 verbose url raw uglify-js
+807 verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js' ]
+808 verbose url resolved https://registry.npmjs.org/uglify-js
+809 info trying registry request attempt 1 at 21:19:23
+810 verbose etag "3DSR400LDYOHVHPFN3DJ53AKX"
+811 http GET https://registry.npmjs.org/uglify-js
+812 verbose url raw worker-farm/1.1.0
+813 verbose url resolving [ 'https://registry.npmjs.org/', './worker-farm/1.1.0' ]
+814 verbose url resolved https://registry.npmjs.org/worker-farm/1.1.0
+815 info trying registry request attempt 1 at 21:19:23
+816 verbose etag "34X0OY3YNCSZX2ZV6E4OZKA7C"
+817 http GET https://registry.npmjs.org/worker-farm/1.1.0
+818 verbose url raw yargs/1.3.2
+819 verbose url resolving [ 'https://registry.npmjs.org/', './yargs/1.3.2' ]
+820 verbose url resolved https://registry.npmjs.org/yargs/1.3.2
+821 info trying registry request attempt 1 at 21:19:23
+822 verbose etag "2K5F10VZP0MDCE84DFG76OWGX"
+823 http GET https://registry.npmjs.org/yargs/1.3.2
+824 verbose url raw ws/0.4.31
+825 verbose url resolving [ 'https://registry.npmjs.org/', './ws/0.4.31' ]
+826 verbose url resolved https://registry.npmjs.org/ws/0.4.31
+827 info trying registry request attempt 1 at 21:19:23
+828 verbose etag "DLELIDXIR3W12EPPGWCVD1RAP"
+829 http GET https://registry.npmjs.org/ws/0.4.31
+830 http 304 https://registry.npmjs.org/jstransform/10.0.1
+831 silly registry.get cb [ 304,
+831 silly registry.get   { date: 'Sat, 28 Mar 2015 12:19:21 GMT',
+831 silly registry.get     server: 'Apache',
+831 silly registry.get     via: '1.1 varnish',
+831 silly registry.get     'last-modified': 'Sat, 28 Mar 2015 12:19:22 GMT',
+831 silly registry.get     'cache-control': 'max-age=60',
+831 silly registry.get     etag: '"AVTPK30ZUGPYEOWV5U9E3KOYJ"',
+831 silly registry.get     age: '0',
+831 silly registry.get     'x-served-by': 'cache-nrt6128-NRT',
+831 silly registry.get     'x-cache': 'MISS',
+831 silly registry.get     'x-cache-hits': '0',
+831 silly registry.get     'x-timer': 'S1427545161.951732,VS0,VE112',
+831 silly registry.get     vary: 'Accept',
+831 silly registry.get     'content-length': '0',
+831 silly registry.get     'keep-alive': 'timeout=10, max=50',
+831 silly registry.get     connection: 'Keep-Alive' } ]
+832 verbose etag jstransform/10.0.1 from cache
+833 verbose read json /Users/take/.npm/jstransform/10.0.1/package/package.json
+834 silly lockFile 46f857b2-jstransform-10-0-1 jstransform@10.0.1
+835 silly lockFile 46f857b2-jstransform-10-0-1 jstransform@10.0.1
+836 http 304 https://registry.npmjs.org/connect/2.8.3
+837 silly registry.get cb [ 304,
+837 silly registry.get   { date: 'Sat, 28 Mar 2015 12:19:21 GMT',
+837 silly registry.get     server: 'Apache',
+837 silly registry.get     via: '1.1 varnish',
+837 silly registry.get     'last-modified': 'Sat, 28 Mar 2015 12:19:22 GMT',
+837 silly registry.get     'cache-control': 'max-age=60',
+837 silly registry.get     etag: '"64AXXFSA68VRWQAPMR956IYVF"',
+837 silly registry.get     age: '0',
+837 silly registry.get     'x-served-by': 'cache-nrt6135-NRT',
+837 silly registry.get     'x-cache': 'MISS',
+837 silly registry.get     'x-cache-hits': '0',
+837 silly registry.get     'x-timer': 'S1427545161.944116,VS0,VE173',
+837 silly registry.get     vary: 'Accept',
+837 silly registry.get     'content-length': '0',
+837 silly registry.get     'keep-alive': 'timeout=10, max=50',
+837 silly registry.get     connection: 'Keep-Alive' } ]
+838 verbose etag connect/2.8.3 from cache
+839 verbose read json /Users/take/.npm/connect/2.8.3/package/package.json
+840 silly lockFile 5e17b07e-connect-2-8-3 connect@2.8.3
+841 silly lockFile 5e17b07e-connect-2-8-3 connect@2.8.3
+842 http 304 https://registry.npmjs.org/react-tools/0.13.0-rc2
+843 silly registry.get cb [ 304,
+843 silly registry.get   { date: 'Sat, 28 Mar 2015 12:19:21 GMT',
+843 silly registry.get     server: 'Apache',
+843 silly registry.get     via: '1.1 varnish',
+843 silly registry.get     'last-modified': 'Sat, 28 Mar 2015 12:19:22 GMT',
+843 silly registry.get     'cache-control': 'max-age=60',
+843 silly registry.get     etag: '"45G4N9WN2WOYHSE30KRFV5YGF"',
+843 silly registry.get     age: '0',
+843 silly registry.get     'x-served-by': 'cache-nrt6126-NRT',
+843 silly registry.get     'x-cache': 'MISS',
+843 silly registry.get     'x-cache-hits': '0',
+843 silly registry.get     'x-timer': 'S1427545161.949859,VS0,VE187',
+843 silly registry.get     vary: 'Accept',
+843 silly registry.get     'content-length': '0',
+843 silly registry.get     'keep-alive': 'timeout=10, max=50',
+843 silly registry.get     connection: 'Keep-Alive' } ]
+844 verbose etag react-tools/0.13.0-rc2 from cache
+845 verbose read json /Users/take/.npm/react-tools/0.13.0-rc2/package/package.json
+846 silly lockFile f2e24482-react-tools-0-13-0-rc2 react-tools@0.13.0-rc2
+847 silly lockFile f2e24482-react-tools-0-13-0-rc2 react-tools@0.13.0-rc2
+848 http 304 https://registry.npmjs.org/source-map/0.1.31
+849 silly registry.get cb [ 304,
+849 silly registry.get   { date: 'Sat, 28 Mar 2015 12:19:22 GMT',
+849 silly registry.get     server: 'Apache',
+849 silly registry.get     via: '1.1 varnish',
+849 silly registry.get     'last-modified': 'Sat, 28 Mar 2015 12:19:22 GMT',
+849 silly registry.get     'cache-control': 'max-age=60',
+849 silly registry.get     etag: '"6X6700A4ARF6BEP1WI9Y86P6"',
+849 silly registry.get     age: '0',
+849 silly registry.get     'x-served-by': 'cache-nrt6128-NRT',
+849 silly registry.get     'x-cache': 'HIT',
+849 silly registry.get     'x-cache-hits': '1',
+849 silly registry.get     'x-timer': 'S1427545162.084751,VS0,VE107',
+849 silly registry.get     vary: 'Accept',
+849 silly registry.get     'content-length': '0',
+849 silly registry.get     'keep-alive': 'timeout=10, max=49',
+849 silly registry.get     connection: 'Keep-Alive' } ]
+850 verbose etag source-map/0.1.31 from cache
+851 verbose read json /Users/take/.npm/source-map/0.1.31/package/package.json
+852 silly lockFile da25d7af-source-map-0-1-31 source-map@0.1.31
+853 silly lockFile da25d7af-source-map-0-1-31 source-map@0.1.31
+854 http 304 https://registry.npmjs.org/debug
+855 silly registry.get cb [ 304,
+855 silly registry.get   { date: 'Sat, 28 Mar 2015 12:19:22 GMT',
+855 silly registry.get     server: 'Apache',
+855 silly registry.get     via: '1.1 varnish',
+855 silly registry.get     'last-modified': 'Sat, 28 Mar 2015 12:19:22 GMT',
+855 silly registry.get     'cache-control': 'max-age=60',
+855 silly registry.get     etag: '"212SA7HQQVG2Y8DFK0ZGFQIGH"',
+855 silly registry.get     age: '13',
+855 silly registry.get     'x-served-by': 'cache-nrt6128-NRT',
+855 silly registry.get     'x-cache': 'HIT',
+855 silly registry.get     'x-cache-hits': '1',
+855 silly registry.get     'x-timer': 'S1427545162.212651,VS0,VE0',
+855 silly registry.get     vary: 'Accept',
+855 silly registry.get     'content-length': '0',
+855 silly registry.get     'keep-alive': 'timeout=10, max=48',
+855 silly registry.get     connection: 'Keep-Alive' } ]
+856 verbose etag debug from cache
+857 silly addNameRange number 2 { name: 'debug', range: '>=2.1.0- <2.2.0-', hasData: true }
+858 silly addNameRange versions [ 'debug',
+858 silly addNameRange   [ '0.0.1',
+858 silly addNameRange     '0.1.0',
+858 silly addNameRange     '0.2.0',
+858 silly addNameRange     '0.3.0',
+858 silly addNameRange     '0.4.0',
+858 silly addNameRange     '0.4.1',
+858 silly addNameRange     '0.5.0',
+858 silly addNameRange     '0.6.0',
+858 silly addNameRange     '0.7.0',
+858 silly addNameRange     '0.7.1',
+858 silly addNameRange     '0.7.2',
+858 silly addNameRange     '0.7.3',
+858 silly addNameRange     '0.7.4',
+858 silly addNameRange     '0.8.0',
+858 silly addNameRange     '0.8.1',
+858 silly addNameRange     '1.0.0',
+858 silly addNameRange     '1.0.1',
+858 silly addNameRange     '1.0.2',
+858 silly addNameRange     '1.0.3',
+858 silly addNameRange     '1.0.4',
+858 silly addNameRange     '2.0.0',
+858 silly addNameRange     '2.1.0',
+858 silly addNameRange     '2.1.1',
+858 silly addNameRange     '2.1.2',
+858 silly addNameRange     '2.1.3' ] ]
+859 verbose addNamed [ 'debug', '2.1.3' ]
+860 verbose addNamed [ '2.1.3', '2.1.3' ]
+861 silly lockFile aef7a5b5-debug-2-1-3 debug@2.1.3
+862 verbose lock debug@2.1.3 /Users/take/.npm/aef7a5b5-debug-2-1-3.lock
+863 verbose read json /Users/take/.npm/debug/2.1.3/package/package.json
+864 silly lockFile aef7a5b5-debug-2-1-3 debug@2.1.3
+865 silly lockFile aef7a5b5-debug-2-1-3 debug@2.1.3
+866 silly lockFile 8ab3c2d7-debug-2-1-0 debug@~2.1.0
+867 silly lockFile 8ab3c2d7-debug-2-1-0 debug@~2.1.0
+868 http 304 https://registry.npmjs.org/absolute-path/0.0.0
+869 silly registry.get cb [ 304,
+869 silly registry.get   { date: 'Sat, 28 Mar 2015 12:19:22 GMT',
+869 silly registry.get     server: 'Apache',
+869 silly registry.get     via: '1.1 varnish',
+869 silly registry.get     'last-modified': 'Sat, 28 Mar 2015 12:19:22 GMT',
+869 silly registry.get     'cache-control': 'max-age=60',
+869 silly registry.get     etag: '"4288PGEF8OV0N9AJGCGH5OGG6"',
+869 silly registry.get     age: '0',
+869 silly registry.get     'x-served-by': 'cache-nrt6126-NRT',
+869 silly registry.get     'x-cache': 'MISS',
+869 silly registry.get     'x-cache-hits': '0',
+869 silly registry.get     'x-timer': 'S1427545162.154341,VS0,VE102',
+869 silly registry.get     vary: 'Accept',
+869 silly registry.get     'content-length': '0',
+869 silly registry.get     'keep-alive': 'timeout=10, max=49',
+869 silly registry.get     connection: 'Keep-Alive' } ]
+870 verbose etag absolute-path/0.0.0 from cache
+871 verbose read json /Users/take/.npm/absolute-path/0.0.0/package/package.json
+872 silly lockFile 3572518e-absolute-path-0-0-0 absolute-path@0.0.0
+873 silly lockFile 3572518e-absolute-path-0-0-0 absolute-path@0.0.0
+874 http 304 https://registry.npmjs.org/react-timer-mixin
+875 silly registry.get cb [ 304,
+875 silly registry.get   { date: 'Sat, 28 Mar 2015 12:19:22 GMT',
+875 silly registry.get     server: 'Apache',
+875 silly registry.get     via: '1.1 varnish',
+875 silly registry.get     'last-modified': 'Sat, 28 Mar 2015 12:19:22 GMT',
+875 silly registry.get     'cache-control': 'max-age=60',
+875 silly registry.get     etag: '"34TSG7YM35T18DBYVORZ71UAV"',
+875 silly registry.get     age: '0',
+875 silly registry.get     'x-served-by': 'cache-nrt6121-NRT',
+875 silly registry.get     'x-cache': 'HIT',
+875 silly registry.get     'x-cache-hits': '1',
+875 silly registry.get     'x-timer': 'S1427545162.173066,VS0,VE102',
+875 silly registry.get     vary: 'Accept',
+875 silly registry.get     'content-length': '0',
+875 silly registry.get     'keep-alive': 'timeout=10, max=50',
+875 silly registry.get     connection: 'Keep-Alive' } ]
+876 verbose etag react-timer-mixin from cache
+877 silly lockFile 34a481da-react-timer-mixin-0-13-1 react-timer-mixin@^0.13.1
+878 silly lockFile 34a481da-react-timer-mixin-0-13-1 react-timer-mixin@^0.13.1
+879 verbose about to build /Users/take/study/react-native/SampleApp/node_modules/react-native
+880 info /Users/take/study/react-native/SampleApp/node_modules/react-native unbuild
+881 verbose from cache /Users/take/study/react-native/SampleApp/node_modules/react-native/package.json
+882 info preuninstall react-native@0.3.1
+883 info uninstall react-native@0.3.1
+884 verbose true,/Users/take/study/react-native/SampleApp/node_modules,/Users/take/study/react-native/SampleApp/node_modules unbuild react-native@0.3.1
+885 verbose /Users/take/study/react-native/SampleApp/node_modules/.bin,[object Object] binRoot
+886 info postuninstall react-native@0.3.1
+887 http 304 https://registry.npmjs.org/stacktrace-parser/0.1.1
+888 silly registry.get cb [ 304,
+888 silly registry.get   { date: 'Sat, 28 Mar 2015 12:19:22 GMT',
+888 silly registry.get     server: 'Apache',
+888 silly registry.get     via: '1.1 varnish',
+888 silly registry.get     'last-modified': 'Sat, 28 Mar 2015 12:19:22 GMT',
+888 silly registry.get     'cache-control': 'max-age=60',
+888 silly registry.get     etag: '"1DQNXL705GTPF24J5P5VUEKXS"',
+888 silly registry.get     age: '0',
+888 silly registry.get     'x-served-by': 'cache-nrt6135-NRT',
+888 silly registry.get     'x-cache': 'MISS',
+888 silly registry.get     'x-cache-hits': '0',
+888 silly registry.get     'x-timer': 'S1427545162.137896,VS0,VE196',
+888 silly registry.get     vary: 'Accept',
+888 silly registry.get     'content-length': '0',
+888 silly registry.get     'keep-alive': 'timeout=10, max=49',
+888 silly registry.get     connection: 'Keep-Alive' } ]
+889 verbose etag stacktrace-parser/0.1.1 from cache
+890 verbose read json /Users/take/.npm/stacktrace-parser/0.1.1/package/package.json
+891 error Error: No compatible version found: react-timer-mixin@'^0.13.1'
+891 error Valid install targets:
+891 error ["0.13.0","0.13.1"]
+891 error     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache.js:682:10)
+891 error     at /usr/local/lib/node_modules/npm/lib/cache.js:597:10
+891 error     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:138:7)
+891 error     at Object.oncomplete (fs.js:297:15)
+892 error If you need help, you may report this log at:
+892 error     <http://github.com/isaacs/npm/issues>
+892 error or email it to:
+892 error     <npm-@googlegroups.com>
+893 error System Darwin 13.4.0
+894 error command "node" "/usr/local/bin/npm" "install" "--save" "react-native"
+895 error cwd /Users/take/study/react-native/SampleApp
+896 error node -v v0.8.22
+897 error npm -v 1.2.14
+898 verbose exit [ 1, true ]
