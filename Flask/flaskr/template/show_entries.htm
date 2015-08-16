@@ -1,0 +1,19 @@
+{% entends "layout.html" %}
+{% block body %}
+<form action="{{ url_for('add_entry') }}" method=post class=add-entry>
+	<dl>
+		<dt>Title:</dt>
+		<dd><input type=text size=20 name=title></input></dd>
+		<dt>Text:</dt>
+		<dd><input type="submit" value=Share></dd>
+	</dl>
+</form>
+
+<ul class="entries">
+	{% for entry in entries %}
+	<li><h2>{{ entry.title }}</h2>{{ entry.text|safe }}</li>
+	{% else %}
+	<li><em>Unbelievable. No entries here so far</em></li>
+	{% end for %}
+</ul>
+{% endblock %}

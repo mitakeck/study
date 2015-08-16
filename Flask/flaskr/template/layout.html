@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flaskr</title>
+	<link rel="stylesheet" href="{{ url_for('statis', filename='style.css') }}">
+</head>
+<body>
+	<h1>Flaskr</h1>
+	{% for message in get_flashed_message() %}
+	<div class="flash">{{ message }}</div>
+	{% endfor %}
+	{% block body %}{% end block %}
+</body>
+</html>
