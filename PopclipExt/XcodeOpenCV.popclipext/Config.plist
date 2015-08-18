@@ -6,7 +6,9 @@
 	<array>
 		<dict>
 			<key>Required Apps</key>
-			<string>Xcode.app</string>
+			<array>
+				<string>com.apple.dt.Xcode</string>
+			</array>
 			<key>After</key>
 			<string>paste-result</string>
 			<key>Image File</key>
