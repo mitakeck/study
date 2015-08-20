@@ -12,7 +12,7 @@ def main():
 
     # loading lena image
     # img = skimage.data.lena()
-    img = io.imread("R0010167r.JPG")
+    img = io.imread("R0010157r.JPG")
 
     # perform selective search
     img_lbl, regions = selectivesearch.selective_search(
