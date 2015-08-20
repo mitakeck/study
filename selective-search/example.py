@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-import skimage.data
+# import skimage.data
+# import skimage.
+from skimage import graph, data, io, segmentation, color
+
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import selectivesearch
@@ -8,7 +11,8 @@ import selectivesearch
 def main():
 
     # loading lena image
-    img = skimage.data.lena()
+    # img = skimage.data.lena()
+    img = io.imread("R0010167r.JPG")
 
     # perform selective search
     img_lbl, regions = selectivesearch.selective_search(
@@ -37,7 +41,8 @@ def main():
             (x, y), w, h, fill=False, edgecolor='red', linewidth=1)
         ax.add_patch(rect)
 
-    plt.show()
+    # plt.show()
+    plt.savefig("graph.png")
 
 if __name__ == "__main__":
     main()
