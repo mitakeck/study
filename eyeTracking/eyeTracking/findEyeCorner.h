@@ -1,14 +1,14 @@
-//
-//  findEyeCorner.h
-//  eyeTracking
-//
-//  Created by mitake on 2015/08/18.
-//  Copyright (c) 2015年 mitake. All rights reserved.
-//
+#ifndef EYE_CORNER_H
+#define EYE_CORNER_H
 
-#ifndef __eyeTracking__findEyeCorner__
-#define __eyeTracking__findEyeCorner__
+#include "opencv2/imgproc/imgproc.hpp"
 
-#include <stdio.h>
+#define kEyeLeft true
+#define kEyeRight false
 
-#endif /* defined(__eyeTracking__findEyeCorner__) */
+void createCornerKernels();
+void releaseCornerKernels();
+cv::Point2f findEyeCorner(cv::Mat region,bool left, bool left2);
+cv::Point2f findSubpixelEyeCorner(cv::Mat region, cv::Point maxP);
+
+#endif

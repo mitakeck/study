@@ -1,14 +1,9 @@
-//
-//  helpers.h
-//  eyeTracking
-//
-//  Created by mitake on 2015/08/18.
-//  Copyright (c) 2015年 mitake. All rights reserved.
-//
+#ifndef HELPERS_H
+#define HELPERS_H
 
-#ifndef __eyeTracking__helpers__
-#define __eyeTracking__helpers__
+bool rectInImage(cv::Rect rect, cv::Mat image);
+bool inMat(cv::Point p,int rows,int cols);
+cv::Mat matrixMagnitude(const cv::Mat &matX, const cv::Mat &matY);
+double computeDynamicThreshold(const cv::Mat &mat, double stdDevFactor);
 
-#include <stdio.h>
-
-#endif /* defined(__eyeTracking__helpers__) */
+#endif

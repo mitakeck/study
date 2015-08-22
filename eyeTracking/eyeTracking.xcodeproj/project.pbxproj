@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E99D6A241B8311470095A342 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E99D6A231B8311470095A342 /* main.cpp */; };
+		E99D6A2D1B8312B90095A342 /* findEyeCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E99D6A2B1B8312B90095A342 /* findEyeCenter.cpp */; };
+		E99D6A301B8312E90095A342 /* findEyeCorner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E99D6A2E1B8312E90095A342 /* findEyeCorner.cpp */; };
+		E99D6A331B83130F0095A342 /* helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E99D6A311B83130F0095A342 /* helpers.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		E99D6A201B8311470095A342 /* eyeTracking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = eyeTracking; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99D6A231B8311470095A342 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E99D6A2A1B8312A00095A342 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		E99D6A2B1B8312B90095A342 /* findEyeCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findEyeCenter.cpp; sourceTree = "<group>"; };
+		E99D6A2C1B8312B90095A342 /* findEyeCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findEyeCenter.h; sourceTree = "<group>"; };
+		E99D6A2E1B8312E90095A342 /* findEyeCorner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findEyeCorner.cpp; sourceTree = "<group>"; };
+		E99D6A2F1B8312E90095A342 /* findEyeCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findEyeCorner.h; sourceTree = "<group>"; };
+		E99D6A311B83130F0095A342 /* helpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = helpers.cpp; sourceTree = "<group>"; };
+		E99D6A321B83130F0095A342 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				E99D6A231B8311470095A342 /* main.cpp */,
+				E99D6A2A1B8312A00095A342 /* constants.h */,
+				E99D6A2B1B8312B90095A342 /* findEyeCenter.cpp */,
+				E99D6A2C1B8312B90095A342 /* findEyeCenter.h */,
+				E99D6A311B83130F0095A342 /* helpers.cpp */,
+				E99D6A321B83130F0095A342 /* helpers.h */,
+				E99D6A2E1B8312E90095A342 /* findEyeCorner.cpp */,
+				E99D6A2F1B8312E90095A342 /* findEyeCorner.h */,
 			);
 			path = eyeTracking;
 			sourceTree = "<group>";
@@ -119,6 +136,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E99D6A241B8311470095A342 /* main.cpp in Sources */,
+				E99D6A301B8312E90095A342 /* findEyeCorner.cpp in Sources */,
+				E99D6A2D1B8312B90095A342 /* findEyeCenter.cpp in Sources */,
+				E99D6A331B83130F0095A342 /* helpers.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +222,31 @@
 		E99D6A281B8311470095A342 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_videostab",
+					"-lopencv_videoio",
+					"-lopencv_video",
+					"-lopencv_ts",
+					"-lopencv_superres",
+					"-lopencv_stitching",
+					"-lopencv_shape",
+					"-lopencv_photo",
+					"-lopencv_objdetect",
+					"-lopencv_ml",
+					"-lopencv_imgproc",
+					"-lopencv_imgcodecs",
+					"-lopencv_highgui",
+					"-lopencv_flann",
+					"-lopencv_features2d",
+					"-lopencv_core",
+					"-lopencv_calib3d",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +254,31 @@
 		E99D6A291B8311470095A342 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_videostab",
+					"-lopencv_videoio",
+					"-lopencv_video",
+					"-lopencv_ts",
+					"-lopencv_superres",
+					"-lopencv_stitching",
+					"-lopencv_shape",
+					"-lopencv_photo",
+					"-lopencv_objdetect",
+					"-lopencv_ml",
+					"-lopencv_imgproc",
+					"-lopencv_imgcodecs",
+					"-lopencv_highgui",
+					"-lopencv_flann",
+					"-lopencv_features2d",
+					"-lopencv_core",
+					"-lopencv_calib3d",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
