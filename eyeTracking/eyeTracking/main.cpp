@@ -34,9 +34,10 @@ cv::Mat skinCrCbHist = cv::Mat::zeros(cv::Size(256, 256), CV_8UC1);
  * @function main
  */
 int main( int argc, const char** argv ) {
-//    CvCapture* capture;
-    cv::VideoCapture cap(0);
+    // Web カメラ画像取得 (USB 接続されたカメラから取得するため添字を 1 に変更)
+    cv::VideoCapture cap(1);
     cv::Mat frame;
+    bool isLoop = true;
     
     // Load the cascades
     if( !face_cascade.load( face_cascade_name ) ){
@@ -61,12 +62,8 @@ int main( int argc, const char** argv ) {
     ellipse(skinCrCbHist, cv::Point(113, 155.6), cv::Size(23.4, 15.2),
             43.0, 0.0, 360.0, cv::Scalar(255, 255, 255), -1);
     
-    // Read the video stream
-//    capture = cvCaptureFromCAM( -1 );
-    
     if( cap.isOpened() ) {
-        while( true ) {
-//            frame = cvQueryFrame( capture );
+        while( isLoop ) {
             cap >> frame;
             // mirror it
             cv::flip(frame, frame, 1);
@@ -83,10 +80,24 @@ int main( int argc, const char** argv ) {
             
             imshow(main_window_name,debugImage);
             
-            int c = cv::waitKey(10);
-            if( (char)c == 'c' ) { break; }
-            if( (char)c == 'f' ) {
-                imwrite("frame.png",frame);
+            int key = cv::waitKey(10);
+            switch (key) {
+                case 'q':
+                    // through
+                case 'c':
+                    isLoop = false;
+                    break;
+                    
+                case 'f':
+                    time_t timer = time(NULL);
+                    std::string fileName = "frame_";
+                    fileName.append(std::to_string(timer));
+                    fileName.append(".png");
+                    imwrite(fileName, frame);
+                    break;
+                    
+//                default:
+//                    break;
             }
             
         }
