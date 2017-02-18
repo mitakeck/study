@@ -43,7 +43,7 @@ def _swig_setattr_nondynamic(self,class_type,name,value,static=1):
     if (not static):
         self.__dict__[name] = value
     else:
-        raise AttributeError("You cannot add attributes to %s" % self)
+        raise AttributeError("You cannot add attributes to {0!s}".format(self))
 
 def _swig_setattr(self,class_type,name,value):
     return _swig_setattr_nondynamic(self,class_type,name,value,0)
@@ -57,7 +57,7 @@ def _swig_getattr(self,class_type,name):
 def _swig_repr(self):
     try: strthis = "proxy of " + self.this.__repr__()
     except: strthis = ""
-    return "<%s.%s; %s >" % (self.__class__.__module__, self.__class__.__name__, strthis,)
+    return "<{0!s}.{1!s}; {2!s} >".format(self.__class__.__module__, self.__class__.__name__, strthis)
 
 try:
     _object = object
