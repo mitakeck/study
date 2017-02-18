@@ -29,22 +29,22 @@ try:
         b = lattice.begin_nodes(i)
         e = lattice.end_nodes(i)
         while b:
-            print "B[%d] %s\t%s" % (i, b.surface, b.feature)
+            print "B[{0:d}] {1!s}\t{2!s}".format(i, b.surface, b.feature)
             b = b.bnext 
         while e:
-            print "E[%d] %s\t%s" % (i, e.surface, e.feature)
+            print "E[{0:d}] {1!s}\t{2!s}".format(i, e.surface, e.feature)
             e = e.bnext 
     print "EOS";
 
     d = t.dictionary_info()
     while d:
-        print "filename: %s" % d.filename
-        print "charset: %s" %  d.charset
-        print "size: %d" %  d.size
-        print "type: %d" %  d.type
-        print "lsize: %d" %  d.lsize
-        print "rsize: %d" %  d.rsize
-        print "version: %d" %  d.version
+        print "filename: {0!s}".format(d.filename)
+        print "charset: {0!s}".format(d.charset)
+        print "size: {0:d}".format(d.size)
+        print "type: {0:d}".format(d.type)
+        print "lsize: {0:d}".format(d.lsize)
+        print "rsize: {0:d}".format(d.rsize)
+        print "version: {0:d}".format(d.version)
         d = d.next
 
 except RuntimeError, e:
